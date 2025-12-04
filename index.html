@@ -37,7 +37,13 @@
         <a href="#team" class="hover:underline">Team</a>
         <a href="#contact" class="hover:underline">Kontakt</a>
       </nav>
-      <a href="#participate" class="rounded-2xl px-3 py-2 border border-zinc-300 shadow-sm text-sm">Mitmachen</a>
+      <button
+        type="button"
+        data-open-signup
+        class="inline-flex items-center rounded-2xl px-4 py-2 bg-yellow-400 text-black text-sm font-semibold shadow hover:bg-yellow-500 transition"
+      >
+        Kick-off: 29.01.2026
+      </button>
     </div>
   </header>
 
@@ -50,7 +56,9 @@
           <strong>G</strong>estaltung <strong>i</strong>ndividueller
           <strong>E</strong>ntwicklungsmuster
         </h1>
-        <p class="mt-3 text-lg md:text-xl">MAGIE ist eine Citizen-Science-Studie, in der Familien, Pädagog:innen und Community-Mitglieder Märchen gemeinsam modernisieren – und wir wissenschaftlich untersuchen, wie sich das auf die Entwicklung von Kindern (4–8 Jahre) auswirkt.</p>
+        <p class="mt-3 text-lg md:text-xl">
+          MAGIE ist eine Citizen-Science-Studie, in der Familien, Pädagog:innen und Community-Mitglieder Märchen gemeinsam modernisieren – und wir wissenschaftlich untersuchen, wie sich das auf die Entwicklung von Kindern (4–8 Jahre) auswirkt.
+        </p>
 
         <!-- Förderhinweis im Hero -->
         <div class="mt-4 flex items-center gap-3">
@@ -60,9 +68,38 @@
           </a>
         </div>
 
-        <div class="mt-6 flex gap-3">
-          <a href="#participate" class="inline-block rounded-xl px-4 py-3 bg-black text-white text-sm font-semibold shadow hover:opacity-90">Ab 01.01.2026 mitmachen</a>
-          <a href="#about" class="inline-block rounded-xl px-4 py-3 border border-zinc-300 text-sm font-semibold shadow-sm">Mehr erfahren</a>
+        <!-- Teaser-Box Kick-off -->
+        <div class="mt-5 p-4 rounded-2xl border border-yellow-300 bg-yellow-50 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="text-sm md:text-base">
+            <div class="font-semibold">
+              Kick-off am <span class="whitespace-nowrap">29.01.2026</span>, 17:30 Uhr
+            </div>
+            <div>Jetzt als Citizen Scientist anmelden und von Anfang an dabei sein.</div>
+          </div>
+          <div class="flex gap-2">
+            <button
+              type="button"
+              data-open-signup
+              class="inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-xs md:text-sm font-semibold shadow hover:opacity-90"
+            >
+              Zur Anmeldung
+            </button>
+            <a
+              href="#participate"
+              class="inline-flex justify-center rounded-xl px-4 py-2 border border-zinc-300 text-xs md:text-sm font-semibold shadow-sm bg-white"
+            >
+              Mehr Infos
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 flex gap-3 flex-wrap">
+          <a href="#participate" class="inline-block rounded-xl px-4 py-3 bg-black text-white text-sm font-semibold shadow hover:opacity-90">
+            Ab 01.01.2026 als Citizen Scientist mitmachen
+          </a>
+          <a href="#about" class="inline-block rounded-xl px-4 py-3 border border-zinc-300 text-sm font-semibold shadow-sm">
+            Mehr über MAGIE erfahren
+          </a>
         </div>
       </div>
       <div class="flex justify-center md:justify-end items-center">
@@ -71,19 +108,171 @@
     </div>
   </section>
 
+  <!-- Participate – prominente Platzierung direkt nach dem Hero -->
+  <section id="participate" class="bg-yellow-50 border-y border-yellow-200">
+    <div class="container px-4 py-12">
+
+      <h2 class="text-2xl md:text-3xl font-extrabold">
+        Jetzt Citizen Scientist werden – gestalten Sie MAGIE aktiv mit
+      </h2>
+
+      <p class="mt-4 leading-relaxed text-lg">
+        Vervollständigen Sie unser Forschungsteam mit Ihren Fähigkeiten und Ideen. 
+        Ab <strong>01.01.2026</strong> können Familien, Pädagog:innen, Schulklassen, Illustrator:innen, Erzähler:innen 
+        und weitere Community-Mitglieder aktiv an der Entwicklung moderner Märchen mitwirken. 
+        Gemeinsam erforschen wir, wie Geschichten auf die sprachliche, emotionale und soziale Entwicklung von Kindern wirken.
+      </p>
+
+      <!-- Kick-off Event -->
+      <div class="mt-6 p-5 bg-white border border-yellow-300 rounded-2xl shadow-sm">
+        <h3 class="font-semibold text-lg">Kick-off-Veranstaltung</h3>
+        <p class="mt-2 text-sm md:text-base">
+          <strong>Datum:</strong> Donnerstag, 29. Januar 2026<br>
+          <strong>Uhrzeit:</strong> 17:30 Uhr<br>
+          <strong>Ort:</strong> Wird nach Anmeldung bekannt gegeben<br>
+        </p>
+        <p class="mt-2 text-sm md:text-base">
+          Der Kick-off bietet eine Einführung in die Projektidee, ein erstes Kennenlernen des Teams 
+          und eine Vorschau auf die geplanten Co-Creation-Workshops.
+        </p>
+      </div>
+
+      <!-- Wie mitmachen & Vorteile -->
+      <div class="mt-10 grid md:grid-cols-2 gap-10">
+
+        <div>
+          <h3 class="font-semibold text-xl">Wie Sie mitmachen können</h3>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-sm md:text-base">
+            <li><strong>Workshops & Treffen (1–2× pro Monat):</strong> 
+              Gemeinsam Märchen weiterentwickeln, Figuren gestalten, Rollenbilder diskutieren.
+            </li>
+            <li><strong>Alltagstests:</strong> Neue Märchen mit Kindern (4–8 Jahre) ausprobieren und Rückmeldungen geben.</li>
+            <li><strong>Kreativ beitragen:</strong> Eigene Texte, kulturelle Perspektiven, Illustrationen oder Audioideen einbringen.</li>
+            <li><strong>Studie mitgestalten:</strong> Fragen, Abläufe und Materialien der Untersuchung mitentwickeln.</li>
+            <li><strong>Flexible Teilnahme:</strong> Mitwirken je nach Zeit und Interesse; punktuelle Beiträge möglich.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-xl">Vorteile & Beteiligungsformate</h3>
+          <ul class="mt-3 list-disc pl-5 space-y-2 text-sm md:text-base">
+            <li><strong>Zertifikat / Teilnahmebestätigung</strong> über die Mitwirkung als Citizen Scientist.</li>
+            <li><strong>Wissen aus Forschung & Praxis:</strong> Entwicklungspsychologie, Erzählforschung, KI-Storytelling.</li>
+            <li><strong>Einfluss auf reale Ergebnisse:</strong> Ihre Perspektiven prägen Texte, Illustrationen und Studienmaterialien.</li>
+            <li><strong>Community:</strong> Austausch mit Familien, Kreativen, Lehrpersonen und Forschenden.</li>
+            <li><strong>Open-Science-Beiträge:</strong> Zugang zu allen Ergebnissen, OER-Materialien und späteren Publikationen.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Zielgruppen-spezifische Einladung -->
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
+
+        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">Für Familien</h4>
+          <p class="mt-1 text-sm leading-relaxed">
+            Neue Märchen zuhause testen, Feedback zu Sprache & Figuren geben, kreative Ideen der Kinder einbringen.
+          </p>
+        </div>
+
+        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">Für Schulen & Pädagog:innen</h4>
+          <p class="mt-1 text-sm leading-relaxed">
+            Märchen als Lernmaterial nutzen, Klassenbeiträge einreichen, Workshops mitentwickeln.
+          </p>
+        </div>
+
+        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">Für Kreative & Kulturschaffende</h4>
+          <p class="mt-1 text-sm leading-relaxed">
+            Illustrationen, Textideen, Audioelemente oder kulturelle Perspektiven einbringen.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Mini-Anmeldemaske (mailto-Formular) -->
+      <div class="mt-10 grid md:grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-8 items-start">
+        <div>
+          <h3 class="font-semibold text-lg">Kurz anmelden – wir melden uns mit weiteren Infos</h3>
+          <p class="mt-2 text-sm text-zinc-700">
+            Sie können uns direkt schreiben oder das Formular nutzen. 
+            Die Angaben helfen uns, die Kick-off-Veranstaltung und die Workshops besser zu planen.
+          </p>
+
+          <form
+            class="mt-4 space-y-3 bg-white border border-zinc-200 rounded-2xl p-4 shadow-sm"
+            action="mailto:robin.segerer@ub.uzh.ch"
+            method="post"
+            enctype="text/plain"
+          >
+            <div>
+              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="anrede">Anrede (optional)</label>
+              <input id="anrede" name="Anrede" type="text" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Frau, Herr, Dr., …">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="name">Name</label>
+              <input id="name" name="Name" type="text" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="Ihr Name">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="email">E-Mail</label>
+              <input id="email" name="E-Mail" type="email" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="ihre.adresse@example.org">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="rolle">Rolle / Interesse</label>
+              <input id="rolle" name="Rolle/Interesse" type="text" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Familie, Lehrperson, Illustrator:in, …">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="bemerkungen">Kurznotiz (optional)</label>
+              <textarea id="bemerkungen" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Teilnahme am Kick-off, besondere Interessen, Verfügbarkeiten …"></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90"
+            >
+              Interesse senden (E-Mail-Programm öffnet)
+            </button>
+          </form>
+
+          <p class="mt-2 text-xs text-zinc-500">
+            Hinweis: Das Formular öffnet Ihr E-Mail-Programm und überträgt die Angaben in eine E-Mail an
+            <a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a>.
+          </p>
+        </div>
+
+        <div class="space-y-3 text-sm text-zinc-700">
+          <h4 class="font-semibold text-sm uppercase tracking-wide text-zinc-500">Direkter Kontakt</h4>
+          <p>
+            Sie können uns jederzeit direkt schreiben:<br>
+            <a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a>
+          </p>
+          <button
+            type="button"
+            data-open-signup
+            class="inline-flex items-center rounded-xl px-4 py-2 bg-yellow-400 text-black text-xs font-semibold shadow hover:bg-yellow-500"
+          >
+            Anmeldemaske im Pop-up öffnen
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- About / Kontext -->
-<section id="about" class="border-t border-zinc-200">
-  <div class="container px-4 py-12">
-    <h2 class="text-2xl md:text-3xl font-extrabold">Kontext</h2>
-    <p class="mt-4 leading-relaxed">
-      Märchen prägen seit Jahrhunderten kulturelle Werte und kindliche Entwicklung. Viele klassische Fassungen spiegeln jedoch Rollenbilder und Botschaften wider, die heutigen Vorstellungen von Vielfalt, Gleichberechtigung und Inklusion nicht mehr entsprechen. 
-      Gleichzeitig nimmt die Bekanntheit vieler Märchen bei Kindern – insbesondere bei Jungen – deutlich ab. 
-      Bisher ist jedoch noch wenig erforscht, wie moderne und gemeinschaftlich adaptierte Märchen auf Kinder wirken – insbesondere auf Sprache, Emotionen, Sozialverhalten und Eltern-Kind-Beziehungen. 
-      <strong>MAGIE</strong> setzt hier an, indem es partizipativ entwickelte, zeitgemäße Märchen erprobt und deren Wirkung wissenschaftlich untersucht. 
-      Das Projekt verbindet Erkenntnisse aus Entwicklungspsychologie, Erzählforschung, KI-gestütztem Storytelling und Citizen Science.
-    </p>
-  </div>
-</section>
+  <section id="about" class="border-t border-zinc-200">
+    <div class="container px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Kontext</h2>
+      <p class="mt-4 leading-relaxed">
+        Märchen prägen seit Jahrhunderten kulturelle Werte und kindliche Entwicklung. Viele klassische Fassungen spiegeln jedoch Rollenbilder und Botschaften wider, die heutigen Vorstellungen von Vielfalt, Gleichberechtigung und Inklusion nicht mehr entsprechen. 
+        Gleichzeitig nimmt die Bekanntheit vieler Märchen bei Kindern – insbesondere bei Jungen – deutlich ab. 
+        Bisher ist jedoch noch wenig erforscht, wie moderne und gemeinschaftlich adaptierte Märchen auf Kinder wirken – insbesondere auf Sprache, Emotionen, Sozialverhalten und Eltern-Kind-Beziehungen. 
+        <strong>MAGIE</strong> setzt hier an, indem es partizipativ entwickelte, zeitgemäße Märchen erprobt und deren Wirkung wissenschaftlich untersucht. 
+        Das Projekt verbindet Erkenntnisse aus Entwicklungspsychologie, Erzählforschung, KI-gestütztem Storytelling und Citizen Science.
+      </p>
+    </div>
+  </section>
 
   <!-- Goals & Impact -->
   <section id="goals" class="bg-zinc-50 border-y border-zinc-200">
@@ -106,22 +295,31 @@
     <div class="container px-4 py-12">
       <h2 class="text-2xl md:text-3xl font-extrabold">Projektphasen</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-4">
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm"><h3 class="font-semibold">Vorbereitung (Monate 1–2)</h3><p class="mt-2 text-sm">Texte sammeln, Citizen Scientists rekrutieren, Partnerschaften aufbauen.</p></div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm"><h3 class="font-semibold">Co-Creation (Monate 3–4)</h3><p class="mt-2 text-sm">Workshops zur gemeinschaftlichen Adaption, Einsatz generativer KI.</p></div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm"><h3 class="font-semibold">Materialproduktion (Monat 5)</h3><p class="mt-2 text-sm">Druck, Illustrationen und Audioversionen.</p></div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm"><h3 class="font-semibold">Studienvorbereitung (Monat 6)</h3><p class="mt-2 text-sm">Studiendesign gemeinsam mit Citizen Scientists finalisieren.</p></div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm"><h3 class="font-semibold">Datenerhebung (Monate 7–10)</h3><p class="mt-2 text-sm">Vorher-/Nachher-Erhebungen, mit Durchführung von Sprachtests, sozial-emotionalen Skalen, Interaktionsanalysen.</p></div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm"><h3 class="font-semibold">Auswertung & Kommunikation (Monate 11–14)</h3><p class="mt-2 text-sm">Analyse, gemeinsame Reflexion, Publikationen und Veranstaltungen.</p></div>
+        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
+          <h3 class="font-semibold">Vorbereitung (Monate 1–2)</h3>
+          <p class="mt-2 text-sm">Texte sammeln, Citizen Scientists rekrutieren, Partnerschaften aufbauen.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
+          <h3 class="font-semibold">Co-Creation (Monate 3–4)</h3>
+          <p class="mt-2 text-sm">Workshops zur gemeinschaftlichen Adaption, Einsatz generativer KI.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
+          <h3 class="font-semibold">Materialproduktion (Monat 5)</h3>
+          <p class="mt-2 text-sm">Druck, Illustrationen und Audioversionen.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
+          <h3 class="font-semibold">Studienvorbereitung (Monat 6)</h3>
+          <p class="mt-2 text-sm">Studiendesign gemeinsam mit Citizen Scientists finalisieren.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
+          <h3 class="font-semibold">Datenerhebung (Monate 7–10)</h3>
+          <p class="mt-2 text-sm">Vorher-/Nachher-Erhebungen, mit Durchführung von Sprachtests, sozial-emotionalen Skalen, Interaktionsanalysen.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
+          <h3 class="font-semibold">Auswertung & Kommunikation (Monate 11–14)</h3>
+          <p class="mt-2 text-sm">Analyse, gemeinsame Reflexion, Publikationen und Veranstaltungen.</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Participate -->
-  <section id="participate" class="bg-zinc-50 border-y border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Teilnahme / Einbezug von Citizen Scientists</h2>
-      <p class="mt-4 leading-relaxed">Eltern, Pädagog:innen, Schulklassen, Illustrator:innen, Erzähler:innen und Community-Mitglieder können als Citizen Scientists <strong>mit Projektbeginn am 01.01.2026</strong> aktiv mitwirken. Sie gestalten neue Märchenfassungen in Co-Creation-Workshops mit, bringen eigene Ideen ein, testen die Märchen im Alltag und geben Feedback zu Sprache, Handlung und Bildern.</p>
-      <p class="mt-3 leading-relaxed">Ihr Beitrag ist entscheidend für kulturelle Passung, Vielfalt der Perspektiven und Alltagstauglichkeit der Erzählungen. Die Ergebnisse fließen in wissenschaftliche Auswertungen ein und werden im digitalen Repositorium veröffentlicht.</p>
     </div>
   </section>
 
@@ -135,7 +333,9 @@
         <li>Dr. Leila Schächinger Tenés</li>
         <li>Lic. phil. Alice Spinnler</li>
       </ul>
-      <p class="mt-6 text-sm text-zinc-600">Unterstützt von den Universitätsbibliotheken Zürich und Basel · Seed Grant Citizen Science Zürich</p>
+      <p class="mt-6 text-sm text-zinc-600">
+        Unterstützt von den Universitätsbibliotheken Zürich und Basel · Seed Grant Citizen Science Zürich
+      </p>
     </div>
   </section>
 
@@ -144,9 +344,79 @@
     <div class="container px-4 py-12">
       <h2 class="text-2xl md:text-3xl font-extrabold">Kontakt</h2>
       <p class="mt-4">Dr. Robin Segerer · Universitätsbibliotheken Zürich & Basel</p>
-      <p class=""><a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a></p>
+      <p>
+        <a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a>
+      </p>
     </div>
   </section>
+
+  <!-- Slide-over / Pop-up für Anmeldung -->
+  <div id="signup-overlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
+
+  <aside
+    id="signup-panel"
+    class="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300"
+    aria-hidden="true"
+  >
+    <div class="h-full flex flex-col">
+      <div class="px-5 py-4 border-b border-zinc-200 flex items-center justify-between">
+        <h2 class="text-base font-semibold">
+          Anmeldung als Citizen Scientist
+        </h2>
+        <button
+          type="button"
+          data-close-signup
+          class="rounded-full p-1 border border-zinc-200 text-zinc-500 hover:bg-zinc-50"
+        >
+          ✕
+        </button>
+      </div>
+      <div class="px-5 py-4 text-sm border-b border-zinc-100">
+        <p>
+          Kick-off am <strong>29.01.2026, 17:30 Uhr</strong> · 
+          Projektstart <strong>01.01.2026</strong>.
+        </p>
+        <p class="mt-1 text-zinc-600">
+          Tragen Sie Ihre Kontaktdaten ein – wir melden uns mit Details zu Ort, Ablauf und nächsten Schritten.
+        </p>
+      </div>
+      <div class="flex-1 overflow-y-auto px-5 py-4">
+        <form
+          class="space-y-3"
+          action="mailto:robin.segerer@ub.uzh.ch"
+          method="post"
+          enctype="text/plain"
+        >
+          <div>
+            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-name">Name</label>
+            <input id="popup-name" name="Name" type="text" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="Ihr Name">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-email">E-Mail</label>
+            <input id="popup-email" name="E-Mail" type="email" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="ihre.adresse@example.org">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-role">Rolle / Interesse</label>
+            <input id="popup-role" name="Rolle/Interesse" type="text" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Familie, Lehrperson, Illustrator:in, …">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-notes">Kurznotiz (optional)</label>
+            <textarea id="popup-notes" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Teilnahme am Kick-off, besondere Interessen …"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90"
+          >
+            Interesse senden (E-Mail-Programm öffnet)
+          </button>
+        </form>
+
+        <p class="mt-3 text-xs text-zinc-500">
+          Hinweis: Das Pop-up nutzt ebenfalls eine <code>mailto:</code>-Anfrage und öffnet Ihr E-Mail-Programm mit den eingegebenen Angaben.
+        </p>
+      </div>
+    </div>
+  </aside>
 
   <footer class="border-t border-zinc-200">
     <div class="container px-4 py-6 text-sm text-zinc-500 flex flex-col md:flex-row gap-2 md:gap-0 md:items-center md:justify-between">
@@ -158,6 +428,41 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('updated').textContent = new Date().toLocaleDateString('de-CH');
+
+    const overlay = document.getElementById('signup-overlay');
+    const panel = document.getElementById('signup-panel');
+
+    function openSignup() {
+      if (!overlay || !panel) return;
+      overlay.classList.remove('hidden');
+      panel.classList.remove('translate-x-full');
+      panel.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeSignup() {
+      if (!overlay || !panel) return;
+      overlay.classList.add('hidden');
+      panel.classList.add('translate-x-full');
+      panel.setAttribute('aria-hidden', 'true');
+    }
+
+    document.querySelectorAll('[data-open-signup]').forEach(btn => {
+      btn.addEventListener('click', openSignup);
+    });
+
+    document.querySelectorAll('[data-close-signup]').forEach(btn => {
+      btn.addEventListener('click', closeSignup);
+    });
+
+    if (overlay) {
+      overlay.addEventListener('click', closeSignup);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeSignup();
+      }
+    });
   </script>
 </body>
 </html>
