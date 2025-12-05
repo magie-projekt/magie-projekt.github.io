@@ -459,7 +459,13 @@
 
 
 <!-- AUDIO-ELEMENT EINBAUEN -->
-<audio id="fairy-sound" src="bird_fairy_melody_low_final.wav"></audio>
+<audio
+  id="fairy-sound"
+  src="bird_fairy_melody_low_final.wav"
+  preload="auto"
+  controls
+  style="display:block; margin: 1rem auto;"
+></audio>
   
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
