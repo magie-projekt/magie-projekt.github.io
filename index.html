@@ -500,17 +500,20 @@
       }
     });
 
-    // Sound abspielen, wenn Button mit data-play-sound geklickt wird
-    const fairySound = document.getElementById('fairy-sound');
+   // Sound abspielen, wenn Button mit data-play-sound geklickt wird
+const fairySound = document.getElementById('fairy-sound');
 
-    document.querySelectorAll('[data-play-sound]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (fairySound) {
-          fairySound.currentTime = 0;  // spielt immer von vorne
-          fairySound.play().catch(() => {}); // verhindert Autoplay-Fehler
-        }
-      });
-    });
+// Lautstärke festlegen
+fairySound.volume = 0.35;
+
+document.querySelectorAll('[data-play-sound]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (fairySound) {
+      fairySound.currentTime = 0;
+      fairySound.play().catch(() => {});
+    }
+  });
+});
   
   </script>
 </body>
