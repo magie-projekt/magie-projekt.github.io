@@ -499,6 +499,18 @@
         closeSignup();
       }
     });
+
+    // Sound abspielen, wenn Button mit data-play-sound geklickt wird
+const fairySound = document.getElementById('fairy-sound');
+
+document.querySelectorAll('[data-play-sound]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (fairySound) {
+      fairySound.currentTime = 0;  // spielt immer von vorne
+      fairySound.play().catch(() => {}); // verhindert Autoplay-Fehler
+    }
+  });
+  
   </script>
 </body>
 </html>
