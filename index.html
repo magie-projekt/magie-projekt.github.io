@@ -37,40 +37,55 @@
         <a href="#team" class="hover:underline">Team</a>
         <a href="#contact" class="hover:underline">Kontakt</a>
       </nav>
-      <button
-        type="button"
-        data-open-signup
-        class="inline-flex items-center rounded-2xl px-4 py-2 bg-yellow-400 text-black text-sm font-semibold shadow hover:bg-yellow-500 transition"
-      >
-        Kennenlernen: 29.01.2026
-      </button>
+
+      <!-- KICKOFF 19.02 – Header Hierarchie (Kick-off > Kennenlernen) -->
+      <div class="flex items-center gap-2">
+        <a
+          href="#kickoff-1902"
+          class="inline-flex items-center rounded-2xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90 transition"
+          title="Kick-off / Workshop-Start"
+        >
+          Kick-off: 19.02.2026
+        </a>
+
+        <button
+          type="button"
+          data-open-signup
+          class="inline-flex items-center rounded-2xl px-4 py-2 bg-yellow-400 text-black text-sm font-semibold shadow hover:bg-yellow-500 transition"
+          title="Kennenlern-Veranstaltung"
+        >
+          Kennenlernen: 29.01.2026
+        </button>
+      </div>
+      <!-- /KICKOFF 19.02 – Header Hierarchie -->
+
     </div>
   </header>
 
   <div class="w-full text-center pt-6 pb-2 relative">
-  <div class="text-2xl md:text-3xl text-zinc-700 relative inline-block"
-       style="font-family: 'Dancing Script', cursive; font-weight: 600;">
-    Gestalte mit uns die Märchen von heute – und morgen.
-    <span class="absolute -top-2 -right-6 text-yellow-400 glow">*</span>
-    <span class="absolute -bottom-1 -left-4 text-yellow-300 glow">*</span>
+    <div class="text-2xl md:text-3xl text-zinc-700 relative inline-block"
+         style="font-family: 'Dancing Script', cursive; font-weight: 600;">
+      Gestalte mit uns die Märchen von heute – und morgen.
+      <span class="absolute -top-2 -right-6 text-yellow-400 glow">*</span>
+      <span class="absolute -bottom-1 -left-4 text-yellow-300 glow">*</span>
+    </div>
   </div>
-</div>
 
-<style>
-  @keyframes sparkle {
-    0%, 100% { opacity: 0.2; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-  }
-  .glow {
-    animation: sparkle 3s ease-in-out infinite;
-    font-size: 1.4rem;
-  }
-</style>
+  <style>
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    .glow {
+      animation: sparkle 3s ease-in-out infinite;
+      font-size: 1.4rem;
+    }
+  </style>
 
-   <!-- Hero -->
+  <!-- Hero -->
   <section class="bg-gradient-to-b from-zinc-50 to-white">
     <div class="container px-4 py-12 md:py-16 grid md:grid-cols-2 gap-6 items-center">
-      
+
       <!-- linke Spalte: Titel, Text, Buttons -->
       <div>
         <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
@@ -93,43 +108,69 @@
           </a>
         </div>
 
-        <!-- Teaser-Box Kick-off -->
-        <div class="mt-5 p-4 rounded-2xl border border-yellow-300 bg-yellow-50 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <!-- KICKOFF 19.02 – Hero: Primäre Teaser-Box (Kick-off als Haupttermin) -->
+        <div id="kickoff-1902"
+             class="mt-5 p-4 rounded-2xl border border-zinc-200 bg-white flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between shadow-sm">
           <div class="text-sm md:text-base">
             <div class="font-semibold">
-              Lerne uns kennen am <span class="whitespace-nowrap">29.01.2026</span>, 17:30 Uhr
+              Kick-off / Workshop-Start: <span class="whitespace-nowrap">19.02.2026</span>, <span class="whitespace-nowrap">17:30 Uhr</span>
             </div>
-            <div>Jetzt als Citizen Scientist anmelden und von Anfang an dabei sein.</div>
+            <div>Start der Co-Creation-Workshops – Einstieg, Ablauf, erste Mitmach-Möglichkeiten.</div>
+          </div>
+
+          <div class="flex gap-2">
+            <a href="#participate"
+               class="inline-flex justify-center rounded-xl px-4 py-2 bg-zinc-900 text-white text-xs md:text-sm font-semibold shadow hover:opacity-90">
+              Details
+            </a>
+            <button
+              type="button"
+              data-open-signup
+              class="inline-flex justify-center rounded-xl px-4 py-2 bg-yellow-400 text-black text-xs md:text-sm font-semibold shadow hover:bg-yellow-500"
+            >
+              Vormerken
+            </button>
+          </div>
+        </div>
+        <!-- /KICKOFF 19.02 – Hero -->
+
+        <!-- KICKOFF 29.01 – Sekundäre Teaser-Box (Kennenlernen als Vorab-Event) -->
+        <div class="mt-3 p-4 rounded-2xl border border-yellow-300 bg-yellow-50 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="text-sm md:text-base">
+            <div class="font-semibold">
+              Kennenlern-Veranstaltung: <span class="whitespace-nowrap">29.01.2026</span>, <span class="whitespace-nowrap">17:30 Uhr</span>
+            </div>
+            <div>Einführung ins Projekt, Team kennenlernen, Ausblick auf die Workshops.</div>
           </div>
 
           <div>
             <button
-  type="button"
-  data-open-signup
-  data-play-sound
-  class="inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-xs md:text-sm font-semibold shadow hover:opacity-90"
->
-  Zur Anmeldung
-</button>
+              type="button"
+              data-open-signup
+              data-play-sound
+              class="inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-xs md:text-sm font-semibold shadow hover:opacity-90"
+            >
+              Zur Anmeldung
+            </button>
           </div>
         </div>
+        <!-- /KICKOFF 29.01 – Sekundär -->
 
-             <!-- Buttons unterhalb -->
+        <!-- Buttons unterhalb -->
         <div class="mt-6 flex flex-wrap">
           <a href="#participate"
              class="inline-block rounded-xl px-4 py-3 bg-black text-white text-sm font-semibold shadow hover:opacity-90">
             Als Citizen Scientist mitmachen – was erwartet mich?
           </a>
-        </div> <!-- Ende Button-Wrapper -->
-
-      </div> <!-- Ende linke Spalte -->
+        </div>
+      </div>
 
       <!-- rechte Spalte: Vogel -->
       <div class="flex justify-center md:justify-end items-center">
         <img src="vogel.png" alt="MAGIE Logo"
              class="w-full max-w-[560px] md:max-w-[620px] h-auto">
       </div>
-    </div> <!-- FEHLTE: Container-Div schließen -->
+    </div>
   </section>
 
   <!-- Participate – prominente Platzierung direkt nach dem Hero -->
@@ -141,25 +182,43 @@
       </h2>
 
       <p class="mt-4 leading-relaxed text-lg">
-  Vervollständige unser Forschungsteam mit Deinen Fähigkeiten und Ideen. 
-  Citizen Scientists sind Menschen, die ohne formalen Forschungshintergrund aktiv an wissenschaftlichen Projekten mitarbeiten und ihre Erfahrungen, Ideen und Kompetenzen einbringen. 
-  Ab 01.01.2026 können interessierte Einzelpersonen, Familien, Pädagog:innen, Schulklassen, Illustrator:innen, Erzähler:innen und weitere Community-Mitglieder aktiv an der Entwicklung moderner Märchen mitwirken. 
-  Gemeinsam erforschen wir, wie Geschichten auf die sprachliche, emotionale und soziale Entwicklung von Kindern wirken.
-</p>
+        Vervollständige unser Forschungsteam mit Deinen Fähigkeiten und Ideen.
+        Citizen Scientists sind Menschen, die ohne formalen Forschungshintergrund aktiv an wissenschaftlichen Projekten mitarbeiten und ihre Erfahrungen, Ideen und Kompetenzen einbringen.
+        Ab 01.01.2026 können interessierte Einzelpersonen, Familien, Pädagog:innen, Schulklassen, Illustrator:innen, Erzähler:innen und weitere Community-Mitglieder aktiv an der Entwicklung moderner Märchen mitwirken.
+        Gemeinsam erforschen wir, wie Geschichten auf die sprachliche, emotionale und soziale Entwicklung von Kindern wirken.
+      </p>
 
-      <!-- Kick-off Event -->
-      <div class="mt-6 p-5 bg-white border border-yellow-300 rounded-2xl shadow-sm">
-        <h3 class="font-semibold text-lg">Kennenlern-Veranstaltung</h3>
-        <p class="mt-2 text-sm md:text-base">
-          <strong>Datum:</strong> Donnerstag, 29. Januar 2026<br>
-          <strong>Uhrzeit:</strong> 17:30 Uhr<br>
-          <strong>Ort:</strong> Hauptgebäude der Uni Zürich; Rämistrasse 71<br>
-        </p>
-        <p class="mt-2 text-sm md:text-base">
-          Das Treffen bietet eine Einführung in die Projektidee, ein erstes Kennenlernen des Teams 
-          und eine Vorschau auf die geplanten Co-Creation-Workshops.
-        </p>
+      <!-- KICKOFF EVENTS – Hierarchie: Kick-off (19.02) zuerst, Kennenlernen (29.01) danach -->
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+
+        <!-- KICKOFF 19.02 – Haupttermin -->
+        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
+          <h3 class="font-semibold text-lg">Kick-off / Workshop-Start (Haupttermin)</h3>
+          <p class="mt-2 text-sm md:text-base">
+            <strong>Datum:</strong> Donnerstag, 19. Februar 2026<br>
+            <strong>Uhrzeit:</strong> 17:30 Uhr<br>
+            <strong>Ort:</strong> (folgt) / Universität Zürich<br>
+          </p>
+          <p class="mt-2 text-sm md:text-base">
+            Start der Co-Creation-Workshops: gemeinsames Modernisieren von Märchen, Rollenbilder diskutieren, erste Tools & Abläufe kennenlernen.
+          </p>
+        </div>
+
+        <!-- KICKOFF 29.01 – Vorab / Kennenlernen -->
+        <div class="p-5 bg-white border border-yellow-300 rounded-2xl shadow-sm">
+          <h3 class="font-semibold text-lg">Kennenlern-Veranstaltung (Vorab)</h3>
+          <p class="mt-2 text-sm md:text-base">
+            <strong>Datum:</strong> Donnerstag, 29. Januar 2026<br>
+            <strong>Uhrzeit:</strong> 17:30 Uhr<br>
+            <strong>Ort:</strong> Hauptgebäude der Uni Zürich; Rämistrasse 71<br>
+          </p>
+          <p class="mt-2 text-sm md:text-base">
+            Einführung in die Projektidee, erstes Kennenlernen des Teams und Vorschau auf die geplanten Co-Creation-Workshops.
+          </p>
+        </div>
+
       </div>
+      <!-- /KICKOFF EVENTS -->
 
       <!-- Wie mitmachen & Vorteile -->
       <div class="mt-10 grid md:grid-cols-2 gap-10">
@@ -167,7 +226,7 @@
         <div>
           <h3 class="font-semibold text-xl">Wie Sie mitmachen können</h3>
           <ul class="mt-3 list-disc pl-5 space-y-2 text-sm md:text-base">
-            <li><strong>Workshops & Treffen (1–2× pro Monat):</strong> 
+            <li><strong>Workshops & Treffen (1–2× pro Monat):</strong>
               Gemeinsam Märchen weiterentwickeln, Figuren gestalten, Rollenbilder diskutieren.
             </li>
             <li><strong>Alltagstests:</strong> Neue Märchen mit Kindern (4–8 Jahre) ausprobieren und Rückmeldungen geben.</li>
@@ -221,8 +280,8 @@
         <div>
           <h3 class="font-semibold text-lg">Kurz anmelden – wir melden uns mit weiteren Infos</h3>
           <p class="mt-2 text-sm text-zinc-700">
-            Du kannst uns direkt schreiben oder das Formular nutzen. 
-            Die Angaben helfen uns, die Kick-off-Veranstaltung und die Workshops besser zu planen.
+            Du kannst uns direkt schreiben oder das Formular nutzen.
+            Die Angaben helfen uns, die Termine und Workshops besser zu planen (Kennenlernen am 29.01. und Kick-off am 19.02.).
           </p>
 
           <form
@@ -249,7 +308,7 @@
             </div>
             <div>
               <label class="block text-xs font-semibold text-zinc-600 mb-1" for="bemerkungen">Kurznotiz (optional)</label>
-              <textarea id="bemerkungen" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Teilnahme am Kick-off, besondere Interessen, Verfügbarkeiten …"></textarea>
+              <textarea id="bemerkungen" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Teilnahme am Kick-off (19.02.) oder Kennenlernen (29.01.), besondere Interessen, Verfügbarkeiten …"></textarea>
             </div>
             <button
               type="submit"
@@ -289,10 +348,10 @@
     <div class="container px-4 py-12">
       <h2 class="text-2xl md:text-3xl font-extrabold">Kontext</h2>
       <p class="mt-4 leading-relaxed">
-        Märchen prägen seit Jahrhunderten kulturelle Werte und kindliche Entwicklung. Viele klassische Fassungen spiegeln jedoch Rollenbilder und Botschaften wider, die heutigen Vorstellungen von Vielfalt, Gleichberechtigung und Inklusion nicht mehr entsprechen. 
-        Gleichzeitig nimmt die Bekanntheit vieler Märchen bei Kindern – insbesondere bei Jungen – deutlich ab. 
-        Bisher ist jedoch noch wenig erforscht, wie moderne und gemeinschaftlich adaptierte Märchen auf Kinder wirken – insbesondere auf Sprache, Emotionen, Sozialverhalten und Eltern-Kind-Beziehungen. 
-        <strong>MAGIE</strong> setzt hier an, indem es partizipativ entwickelte, zeitgemässe Märchen erprobt und deren Wirkung wissenschaftlich untersucht. 
+        Märchen prägen seit Jahrhunderten kulturelle Werte und kindliche Entwicklung. Viele klassische Fassungen spiegeln jedoch Rollenbilder und Botschaften wider, die heutigen Vorstellungen von Vielfalt, Gleichberechtigung und Inklusion nicht mehr entsprechen.
+        Gleichzeitig nimmt die Bekanntheit vieler Märchen bei Kindern – insbesondere bei Jungen – deutlich ab.
+        Bisher ist jedoch noch wenig erforscht, wie moderne und gemeinschaftlich adaptierte Märchen auf Kinder wirken – insbesondere auf Sprache, Emotionen, Sozialverhalten und Eltern-Kind-Beziehungen.
+        <strong>MAGIE</strong> setzt hier an, indem es partizipativ entwickelte, zeitgemässe Märchen erprobt und deren Wirkung wissenschaftlich untersucht.
         Das Projekt verbindet Erkenntnisse aus Entwicklungspsychologie, Erzählforschung, KI-gestütztem Storytelling und Citizen Science.
       </p>
     </div>
@@ -348,22 +407,22 @@
   </section>
 
   <!-- Team -->
-<section id="team">
-  <div class="container px-4 py-12">
-    <h2 class="text-2xl md:text-3xl font-extrabold">Projektleitung & Team</h2>
-    <ul class="mt-4 grid md:grid-cols-2 gap-2 list-disc pl-5">
-      <li>Dr. Robin Segerer</li>
-      <li>Dr. Meret Fehlmann</li>
-      <li>Dr. Leila Schächinger Tenés</li>
-      <li>Lic. phil. Alice Spinnler</li>
-      <li>Norma Jäger, M. A. (Koordination)</li>
-      <li>Myrna Stricker, B. A. (Koordination)</li>
-    </ul>
-    <p class="mt-6 text-sm text-zinc-600">
-      Unterstützt von den Universitätsbibliotheken Zürich und Basel · Seed Grant Citizen Science Zürich
-    </p>
-  </div>
-</section>
+  <section id="team">
+    <div class="container px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Projektleitung & Team</h2>
+      <ul class="mt-4 grid md:grid-cols-2 gap-2 list-disc pl-5">
+        <li>Dr. Robin Segerer</li>
+        <li>Dr. Meret Fehlmann</li>
+        <li>Dr. Leila Schächinger Tenés</li>
+        <li>Lic. phil. Alice Spinnler</li>
+        <li>Norma Jäger, M. A. (Koordination)</li>
+        <li>Myrna Stricker, B. A. (Koordination)</li>
+      </ul>
+      <p class="mt-6 text-sm text-zinc-600">
+        Unterstützt von den Universitätsbibliotheken Zürich und Basel · Seed Grant Citizen Science Zürich
+      </p>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="border-t border-zinc-200">
@@ -397,15 +456,20 @@
           ✕
         </button>
       </div>
+
+      <!-- KICKOFF 19.02 – Pop-up Text ergänzt + Hierarchie -->
       <div class="px-5 py-4 text-sm border-b border-zinc-100">
         <p>
-          Kick-off am <strong>29.01.2026, 17:30 Uhr</strong> · 
+          Kick-off / Workshop-Start <strong>19.02.2026</strong> ·
+          Kennenlernen <strong>29.01.2026, 17:30 Uhr</strong> ·
           Projektstart <strong>01.01.2026</strong>.
         </p>
         <p class="mt-1 text-zinc-600">
           Tragen Sie Ihre Kontaktdaten ein – wir melden uns mit Details zu Ort, Ablauf und nächsten Schritten.
         </p>
       </div>
+      <!-- /KICKOFF 19.02 – Pop-up -->
+
       <div class="flex-1 overflow-y-auto px-5 py-4">
         <form
           class="space-y-3"
@@ -427,7 +491,7 @@
           </div>
           <div>
             <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-notes">Kurznotiz (optional)</label>
-            <textarea id="popup-notes" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Teilnahme am Kick-off, besondere Interessen …"></textarea>
+            <textarea id="popup-notes" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Teilnahme Kick-off (19.02.) oder Kennenlernen (29.01.), besondere Interessen …"></textarea>
           </div>
           <button
             type="submit"
@@ -451,10 +515,9 @@
     </div>
   </footer>
 
+  <!-- AUDIO-ELEMENT EINBAUEN -->
+  <audio id="fairy-sound" src="bird_fairy_melody_low_final.wav"></audio>
 
-<!-- AUDIO-ELEMENT EINBAUEN -->
-<audio id="fairy-sound" src="bird_fairy_melody_low_final.wav"></audio>
-  
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('updated').textContent = new Date().toLocaleDateString('de-CH');
@@ -494,21 +557,20 @@
       }
     });
 
-   // Sound abspielen, wenn Button mit data-play-sound geklickt wird
-const fairySound = document.getElementById('fairy-sound');
+    // Sound abspielen, wenn Button mit data-play-sound geklickt wird
+    const fairySound = document.getElementById('fairy-sound');
 
-// Lautstärke festlegen
-fairySound.volume = 0.35;
+    // Lautstärke festlegen
+    if (fairySound) fairySound.volume = 0.35;
 
-document.querySelectorAll('[data-play-sound]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (fairySound) {
-      fairySound.currentTime = 0;
-      fairySound.play().catch(() => {});
-    }
-  });
-});
-  
+    document.querySelectorAll('[data-play-sound]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (fairySound) {
+          fairySound.currentTime = 0;
+          fairySound.play().catch(() => {});
+        }
+      });
+    });
   </script>
 </body>
 </html>
