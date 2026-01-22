@@ -2,7 +2,6 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <!-- Favicons -->
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
@@ -18,668 +17,167 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; margin:0; color:#18181b; }
-    .container { max-width: 1000px; margin-left:auto; margin-right:auto; }
-    h1 strong { font-weight: 800 !important; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .container { max-width: 1000px; margin-left: auto; margin-right: auto; }
   </style>
 </head>
+
 <body class="bg-white text-zinc-800">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-zinc-200">
-    <div class="container px-4 py-3 flex items-center justify-between">
-      <a href="#" class="font-extrabold text-xl">MAGIE</a>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#about" class="hover:underline">Kontext</a>
-        <a href="#goals" class="hover:underline">Ziele & Wirkung</a>
-        <a href="#phases" class="hover:underline">Projektphasen</a>
-        <a href="#participate" class="hover:underline">Mitmachen</a>
-        <a href="#team" class="hover:underline">Team</a>
-        <a href="#partners" class="hover:underline">Unterstützung</a>
-        <a href="#contact" class="hover:underline">Kontakt</a>
-      </nav>
+<!-- HEADER -->
+<header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-zinc-200">
+  <div class="container px-4 py-3 flex items-center justify-between">
+    <span class="font-extrabold text-xl">MAGIE</span>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#about" class="hover:underline">Kontext</a>
+      <a href="#goals" class="hover:underline">Ziele</a>
+      <a href="#participate" class="hover:underline">Mitmachen</a>
+      <a href="#team" class="hover:underline">Team</a>
+      <a href="#partners" class="hover:underline">Unterstützung</a>
+    </nav>
+    <a href="#kickoff"
+       class="rounded-2xl px-4 py-2 bg-black text-white text-sm font-semibold shadow">
+      Kick-off: 29.01. / 19.02.2026
+    </a>
+  </div>
+</header>
 
-      <!-- KICK-OFF – ein Button, beide Termine identisch -->
-      <div class="flex items-center gap-2">
-        <a
-          href="#kickoff"
-          class="inline-flex items-center rounded-2xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90 transition"
-          title="Kick-off (identische Veranstaltung an zwei Terminen)"
-        >
-          Kick-off: 29.01. / 19.02.2026
+<!-- HERO -->
+<section class="bg-gradient-to-b from-zinc-50 to-white">
+  <div class="container px-4 py-14 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+        <strong>M</strong>ärchen als <strong>A</strong>nhaltspunkte der<br>
+        <strong>G</strong>estaltung <strong>I</strong>ndividueller<br>
+        <strong>E</strong>ntwicklungsmuster
+      </h1>
+
+      <p class="mt-4 text-lg">
+        MAGIE ist eine Citizen-Science-Studie zur gemeinschaftlichen
+        Adaption von Märchen und ihrer Wirkung auf die sprachliche,
+        emotionale und soziale Entwicklung von Kindern (4–8 Jahre).
+      </p>
+
+      <div id="kickoff"
+           class="mt-6 p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm">
+        <div class="font-semibold">
+          Kick-off (identisch):
+          Do, 29.01.2026 (17:30 Uhr) oder Do, 19.02.2026 (18:00 Uhr)
+        </div>
+        <div class="text-sm text-zinc-600 mt-1">
+          Einführung ins Projekt, Kennenlernen des Forschungsteams,
+          Ausblick auf Mitmach-Workshops.
+          <br><strong>Ein Termin genügt.</strong>
+        </div>
+      </div>
+
+      <div class="mt-6 flex gap-3 flex-wrap">
+        <a href="#participate"
+           class="rounded-xl px-4 py-3 bg-black text-white text-sm font-semibold shadow">
+          Mitmachen
+        </a>
+        <a href="https://www.instagram.com/magie_projekt/"
+           target="_blank" rel="noopener"
+           class="rounded-xl px-4 py-3 border border-zinc-200 text-sm font-semibold">
+          Instagram @magie_projekt
         </a>
       </div>
-      <!-- /KICK-OFF -->
-
     </div>
-  </header>
 
-  <div class="w-full text-center pt-6 pb-2 relative">
-    <div class="text-2xl md:text-3xl text-zinc-700 relative inline-block"
-         style="font-family: 'Dancing Script', cursive; font-weight: 600;">
-      Gestalte mit uns die Märchen von heute – und morgen.
-      <span class="absolute -top-2 -right-6 text-yellow-400 glow">*</span>
-      <span class="absolute -bottom-1 -left-4 text-yellow-300 glow">*</span>
+    <div class="flex justify-center md:justify-end">
+      <img src="vogel.png" alt="MAGIE Logo" class="w-full max-w-md">
     </div>
   </div>
+</section>
 
-  <style>
-    @keyframes sparkle {
-      0%, 100% { opacity: 0.2; transform: scale(0.8); }
-      50% { opacity: 1; transform: scale(1.2); }
-    }
-    .glow {
-      animation: sparkle 3s ease-in-out infinite;
-      font-size: 1.4rem;
-    }
-  </style>
+<!-- PARTICIPATE -->
+<section id="participate" class="bg-yellow-50 border-y border-yellow-200">
+  <div class="container px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Jetzt Citizen Scientist werden</h2>
+    <p class="mt-4 text-lg">
+      Bringen Sie Ihre Ideen, Perspektiven und Erfahrungen ein – gemeinsam
+      erforschen wir, wie moderne Märchen Kinder heute begleiten können.
+    </p>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-b from-zinc-50 to-white">
-    <div class="container px-4 py-12 md:py-16 grid md:grid-cols-2 gap-6 items-center">
+<!-- TEAM -->
+<section id="team" class="border-t border-zinc-200">
+  <div class="container px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Projektleitung & Team</h2>
+    <ul class="mt-4 list-disc pl-5 grid md:grid-cols-2 gap-2">
+      <li>Dr. Robin Segerer</li>
+      <li>Dr. Meret Fehlmann</li>
+      <li>Dr. Leila Schächinger Tenés</li>
+      <li>Lic. phil. Alice Spinnler</li>
+      <li>Norma Jäger, M. A.</li>
+      <li>Myrna Stricker, B. A.</li>
+    </ul>
+  </div>
+</section>
 
-      <!-- linke Spalte: Titel, Text, Buttons -->
-      <div>
-        <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
-          <strong>M</strong>ärchen als <strong>A</strong>nhaltspunkte der<br>
-          <strong>G</strong>estaltung <br>
-          <strong>I</strong>ndividueller <br>
-          <strong>E</strong>ntwicklungsmuster
-        </h1>
+<!-- UNTERSTÜTZUNG & PARTNER (AM ENDE) -->
+<section id="partners" class="border-t border-zinc-200 bg-white">
+  <div class="container px-4 py-14">
+    <h2 class="text-3xl font-extrabold">Unterstützung & Partner</h2>
 
-        <p class="mt-3 text-lg md:text-xl">
-          MAGIE ist eine Citizen-Science-Studie, in der interessierte Bürger:innen, Pädagog:innen und Kulturschaffende Märchen gemeinsam modernisieren – und wir wissenschaftlich untersuchen, wie sich das auf die Entwicklung von Kindern (4–8 Jahre) auswirkt.
-        </p>
+    <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4 items-center">
+      <a href="https://www.ub.uzh.ch" target="_blank" rel="noopener"
+         class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
+        <img src="assets/logos/uzh.svg"
+             alt="Universitätsbibliothek Zürich"
+             class="h-10 w-auto object-contain">
+      </a>
 
-        <!-- Förderhinweis im Hero -->
-        <div class="mt-4 flex items-center gap-3">
-          <img src="grant-logo.png" alt="Citizen Science Zürich" class="h-8 w-auto">
-          <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener"
-             class="text-sm font-semibold text-zinc-600 underline decoration-2 decoration-yellow-400 underline-offset-4 hover:text-black">
-            Gefördert durch den Citizen Science Grant Zürich
-          </a>
-        </div>
+      <a href="https://www.ub.unibas.ch" target="_blank" rel="noopener"
+         class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
+        <img src="assets/logos/unibas.svg"
+             alt="Universitätsbibliothek Basel"
+             class="h-10 w-auto object-contain">
+      </a>
 
-        <!-- KICK-OFF – identische Veranstaltung an zwei Terminen (Sound bleibt beim Vormerken) -->
-        <div id="kickoff"
-             class="mt-5 p-4 rounded-2xl border border-zinc-200 bg-white flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between shadow-sm">
-          <div class="text-sm md:text-base">
-            <div class="font-semibold">
-              Kick-off (identisch):
-              <span class="whitespace-nowrap">Do, 29.01.2026</span>
-              <span class="text-zinc-500">(17:30 Uhr)</span>
-              <span class="text-zinc-500">oder</span>
-              <span class="whitespace-nowrap">Do, 19.02.2026</span>
-              <span class="text-zinc-500">(18:00 Uhr)</span>
-            </div>
-            <div>
-              Einführung in das Projektvorhaben, Kennenlernen des Forschungsteams, Ausblick auf Mitmach-Workshops und erster Austausch mit Gleichgesinnten.
-            </div>
-            <div class="mt-1 text-xs md:text-sm text-zinc-600">
-              Hinweis: Die beiden Termine sind <strong>inhaltlich identisch</strong> – es genügt, <strong>einen</strong> Termin zu besuchen.
-            </div>
-          </div>
+      <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener"
+         class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
+        <img src="assets/logos/citizen.png"
+             alt="Citizen Science Zürich"
+             class="h-10 w-auto object-contain">
+      </a>
 
-          <div class="flex gap-2">
-            <a href="#participate"
-               class="inline-flex justify-center rounded-xl px-4 py-2 bg-zinc-900 text-white text-xs md:text-sm font-semibold shadow hover:opacity-90">
-              Details
-            </a>
-            <button
-              type="button"
-              data-open-signup
-              data-play-sound
-              class="inline-flex justify-center rounded-xl px-4 py-2 bg-yellow-400 text-black text-xs md:text-sm font-semibold shadow hover:bg-yellow-500"
-            >
-              Vormerken
-            </button>
-          </div>
-        </div>
-        <!-- /KICK-OFF -->
-
-        <!-- Buttons unterhalb -->
-        <div class="mt-6 flex flex-wrap">
-          <a href="#participate"
-             class="inline-block rounded-xl px-4 py-3 bg-black text-white text-sm font-semibold shadow hover:opacity-90">
-            Als Citizen Scientist mitmachen – was erwartet mich?
-          </a>
-          <a href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener"
-             class="ml-0 mt-3 sm:ml-3 sm:mt-0 inline-block rounded-xl px-4 py-3 bg-white border border-zinc-200 text-sm font-semibold shadow-sm hover:bg-zinc-50">
-            Instagram: @magie_projekt
-          </a>
-        </div>
-      </div>
-
-      <!-- rechte Spalte: Vogel -->
-      <div class="flex justify-center md:justify-end items-center">
-        <img src="vogel.png" alt="MAGIE Logo"
-             class="w-full max-w-[560px] md:max-w-[620px] h-auto">
-      </div>
+      <a href="https://www.maerchengesellschaft.ch" target="_blank" rel="noopener"
+         class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
+        <img src="assets/logos/maerchen.svg"
+             alt="Schweizerische Märchengesellschaft"
+             class="h-10 w-auto object-contain">
+      </a>
     </div>
-  </section>
 
-  <!-- Partners / Unterstützung -->
-  <section id="partners" class="border-y border-zinc-200 bg-white">
-    <div class="container px-4 py-10">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Unterstützung & Partner</h2>
+    <p class="mt-6 text-sm text-zinc-600">
+      Unterstützt durch die Universitätsbibliotheken Zürich und Basel ·
+      Citizen Science Zürich · Schweizerische Märchengesellschaft ·
+      <a href="https://www.instagram.com/magie_projekt/" target="_blank" class="underline">Instagram @magie_projekt</a>
+    </p>
+  </div>
+</section>
 
-      <div class="mt-4 grid md:grid-cols-2 gap-4">
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm bg-white">
-          <h3 class="font-semibold text-lg">Träger & Infrastruktur</h3>
-          <p class="mt-2 text-sm md:text-base text-zinc-700">
-            Unterstützt durch die <a class="underline" href="https://www.ub.uzh.ch" target="_blank" rel="noopener">Universitätsbibliothek Zürich</a> und die
-            <a class="underline" href="https://www.ub.unibas.ch" target="_blank" rel="noopener">Universitätsbibliothek Basel</a>.
-          </p>
-        </div>
+<!-- FOOTER -->
+<footer class="border-t border-zinc-200">
+  <div class="container px-4 py-6 text-sm text-zinc-500 flex justify-between">
+    <span>© <span id="year"></span> MAGIE</span>
+    <span>Letzte Aktualisierung: <span id="updated"></span></span>
+  </div>
+</footer>
 
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm bg-white">
-          <h3 class="font-semibold text-lg">Förderung</h3>
-          <p class="mt-2 text-sm md:text-base text-zinc-700">
-            Gefördert durch den <a class="underline" href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener">Citizen Science Grant Zürich</a>.
-          </p>
-        </div>
+<!-- AUDIO -->
+<audio id="fairy-sound" src="bird_fairy_melody_low_final.wav"></audio>
 
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm bg-white">
-          <h3 class="font-semibold text-lg">Fachliche Unterstützung</h3>
-          <p class="mt-2 text-sm md:text-base text-zinc-700">
-            Mit Unterstützung der <a class="underline" href="https://www.maerchengesellschaft.ch/" target="_blank" rel="noopener">Schweizerischen Märchengesellschaft</a>.
-          </p>
-        </div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('updated').textContent =
+    new Date().toLocaleDateString('de-CH');
 
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm bg-white">
-          <h3 class="font-semibold text-lg">Aktuelles & Einblicke</h3>
-          <p class="mt-2 text-sm md:text-base text-zinc-700">
-            Folge uns auf Instagram:
-            <a class="underline" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">@magie_projekt</a>.
-          </p>
-        </div>
-      </div>
+  const sound = document.getElementById('fairy-sound');
+  if (sound) sound.volume = 0.35;
+</script>
 
-      <!-- Optional: kleine Linkzeile -->
-      <div class="mt-6 flex flex-wrap gap-3 text-sm">
-        <a class="underline text-zinc-700 hover:text-black" href="https://www.ub.uzh.ch" target="_blank" rel="noopener">UB Zürich</a>
-        <span class="text-zinc-300">·</span>
-        <a class="underline text-zinc-700 hover:text-black" href="https://www.ub.unibas.ch" target="_blank" rel="noopener">UB Basel</a>
-        <span class="text-zinc-300">·</span>
-        <a class="underline text-zinc-700 hover:text-black" href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener">Citizen Science Zürich</a>
-        <span class="text-zinc-300">·</span>
-        <a class="underline text-zinc-700 hover:text-black" href="https://www.maerchengesellschaft.ch/" target="_blank" rel="noopener">Schweizerische Märchengesellschaft</a>
-        <span class="text-zinc-300">·</span>
-        <a class="underline text-zinc-700 hover:text-black" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Participate – prominente Platzierung direkt nach dem Hero -->
-  <section id="participate" class="bg-yellow-50 border-y border-yellow-200">
-    <div class="container px-4 py-12">
-
-      <h2 class="text-2xl md:text-3xl font-extrabold">
-        Jetzt Citizen Scientist werden – gestalte MAGIE aktiv mit
-      </h2>
-
-      <p class="mt-4 leading-relaxed text-lg">
-        Vervollständige unser Forschungsteam mit Deinen Fähigkeiten und Ideen.
-        Citizen Scientists sind Menschen, die ohne formalen Forschungshintergrund aktiv an wissenschaftlichen Projekten mitarbeiten und ihre Erfahrungen, Ideen und Kompetenzen einbringen.
-        Ab 01.01.2026 können interessierte Einzelpersonen, Familien, Pädagog:innen, Schulklassen, Illustrator:innen, Erzähler:innen und weitere Community-Mitglieder aktiv an der Entwicklung moderner Märchen mitwirken.
-        Gemeinsam erforschen wir, wie Geschichten auf die sprachliche, emotionale und soziale Entwicklung von Kindern wirken.
-      </p>
-
-      <!-- KICK-OFF – identisch an zwei Terminen (Ort gleich) -->
-      <div class="mt-6 grid md:grid-cols-2 gap-4">
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm md:col-span-2">
-          <h3 class="font-semibold text-lg">Kick-off (identische Veranstaltung an zwei Terminen)</h3>
-
-          <p class="mt-2 text-sm md:text-base">
-            <strong>Termine:</strong>
-            Donnerstag, 29. Januar 2026 <span class="text-zinc-500">(17:30 Uhr)</span>
-            <span class="text-zinc-500">oder</span>
-            Donnerstag, 19. Februar 2026 <span class="text-zinc-500">(18:00 Uhr)</span><br>
-            <strong>Ort:</strong> Hauptgebäude der Uni Zürich; Rämistrasse 71
-          </p>
-
-          <p class="mt-2 text-sm md:text-base">
-            Einführung in das Projektvorhaben, Kennenlernen des Forschungsteams, Ausblick auf Mitmach-Workshops und erster Austausch mit Gleichgesinnten.
-          </p>
-
-          <p class="mt-2 text-xs md:text-sm text-zinc-600">
-            Hinweis: Die beiden Termine sind <strong>inhaltlich identisch</strong>. Bitte besuchen Sie <strong>nur einen</strong> Termin.
-          </p>
-
-          <div class="mt-4 flex flex-wrap gap-2">
-            <button
-              type="button"
-              data-open-signup
-              data-play-sound
-              class="inline-flex justify-center rounded-xl px-4 py-2 bg-yellow-400 text-black text-xs md:text-sm font-semibold shadow hover:bg-yellow-500"
-            >
-              Vormerken / Interesse anmelden
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- /KICK-OFF -->
-
-      <!-- Wie mitmachen & Vorteile -->
-      <div class="mt-10 grid md:grid-cols-2 gap-10">
-
-        <div>
-          <h3 class="font-semibold text-xl">Wie Sie mitmachen können</h3>
-          <ul class="mt-3 list-disc pl-5 space-y-2 text-sm md:text-base">
-            <li><strong>Workshops & Treffen (1–2× pro Monat):</strong>
-              Gemeinsam Märchen weiterentwickeln, Figuren gestalten, Rollenbilder diskutieren.
-            </li>
-            <li><strong>Alltagstests:</strong> Neue Märchen mit Kindern (4–8 Jahre) ausprobieren und Rückmeldungen geben.</li>
-            <li><strong>Kreativ beitragen:</strong> Eigene Texte, kulturelle Perspektiven, Illustrationen oder Audioideen einbringen.</li>
-            <li><strong>Studie mitgestalten:</strong> Fragen, Abläufe und Materialien der Untersuchung mitentwickeln.</li>
-            <li><strong>Flexible Teilnahme:</strong> Mitwirken je nach Zeit und Interesse; punktuelle Beiträge möglich.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-xl">Vorteile & Beteiligungsformate</h3>
-          <ul class="mt-3 list-disc pl-5 space-y-2 text-sm md:text-base">
-            <li><strong>Zertifikat / Teilnahmebestätigung</strong> über die Mitwirkung als Citizen Scientist.</li>
-            <li><strong>Wissen aus Forschung & Praxis:</strong> Entwicklungspsychologie, Erzählforschung, KI-Storytelling.</li>
-            <li><strong>Einfluss auf reale Ergebnisse:</strong> Ihre Perspektiven prägen Texte, Illustrationen und Studienmaterialien.</li>
-            <li><strong>Community:</strong> Austausch mit Familien, Kreativen, Lehrpersonen und Forschenden.</li>
-            <li><strong>Open-Science-Beiträge:</strong> Zugang zu allen Ergebnissen, freien Lern- und Lehrmaterialien und späteren Publikationen.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Zielgruppen-spezifische Einladung -->
-      <div class="mt-12 grid md:grid-cols-3 gap-8">
-
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <h4 class="font-semibold">Für Einzelpersonen und Familien</h4>
-          <p class="mt-1 text-sm leading-relaxed">
-            Neue Märchen zuhause und mit Freunden testen, Feedback zu Sprache & Figuren geben, kreative Ideen der Kinder einbringen.
-          </p>
-        </div>
-
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <h4 class="font-semibold">Für Schulen & Pädagog:innen</h4>
-          <p class="mt-1 text-sm leading-relaxed">
-            Märchen als Lernmaterial nutzen, Klassenbeiträge einreichen, Workshops mitentwickeln.
-          </p>
-        </div>
-
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <h4 class="font-semibold">Für Kreative & Kulturschaffende</h4>
-          <p class="mt-1 text-sm leading-relaxed">
-            Illustrationen, Textideen, Audioelemente oder kulturelle Perspektiven einbringen.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Mini-Anmeldemaske (mailto-Formular) -->
-      <div class="mt-10 grid md:grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-8 items-start">
-        <div>
-          <h3 class="font-semibold text-lg">Kurz anmelden – wir melden uns mit weiteren Infos</h3>
-          <p class="mt-2 text-sm text-zinc-700">
-            Du kannst uns direkt schreiben oder das Formular nutzen.
-            Die Angaben helfen uns, den Kick-off und die Workshops besser zu planen (Kick-off: 29.01. oder 19.02., identische Veranstaltung).
-          </p>
-
-          <form
-            class="mt-4 space-y-3 bg-white border border-zinc-200 rounded-2xl p-4 shadow-sm"
-            action="mailto:robin.segerer@ub.uzh.ch"
-            method="post"
-            enctype="text/plain"
-          >
-            <div>
-              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="anrede">Anrede (optional)</label>
-              <input id="anrede" name="Anrede" type="text" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Frau, Herr, Dr., …">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="name">Name</label>
-              <input id="name" name="Name" type="text" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="Ihr Name">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="email">E-Mail</label>
-              <input id="email" name="E-Mail" type="email" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="ihre.adresse@example.org">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="rolle">Rolle / Interesse</label>
-              <input id="rolle" name="Rolle/Interesse" type="text" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Einzelperson, Familie, Lehrperson, Illustrator:in, …">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-zinc-600 mb-1" for="bemerkungen">Kurznotiz (optional)</label>
-              <textarea id="bemerkungen" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. gewünschter Kick-off-Termin (29.01. oder 19.02.), besondere Interessen, Verfügbarkeiten …"></textarea>
-            </div>
-            <button
-              type="submit"
-              class="w-full inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90"
-            >
-              Interesse senden (E-Mail-Programm öffnet)
-            </button>
-          </form>
-
-          <p class="mt-2 text-xs text-zinc-500">
-            Hinweis: Das Formular öffnet Ihr E-Mail-Programm und überträgt die Angaben in eine E-Mail an
-            <a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a>.
-          </p>
-        </div>
-
-        <div class="space-y-3 text-sm text-zinc-700">
-          <h4 class="font-semibold text-sm uppercase tracking-wide text-zinc-500">Direkter Kontakt</h4>
-          <p>
-            Sie können uns jederzeit direkt schreiben:<br>
-            <a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a>
-          </p>
-          <button
-            type="button"
-            data-open-signup
-            data-play-sound
-            class="inline-flex items-center rounded-xl px-4 py-2 bg-yellow-400 text-black text-xs font-semibold shadow hover:bg-yellow-500"
-          >
-            Anmeldemaske im Pop-up öffnen
-          </button>
-
-          <div class="pt-2 text-xs text-zinc-600">
-            Updates:
-            <a class="underline" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">Instagram @magie_projekt</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- About / Kontext -->
-  <section id="about" class="border-t border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Kontext</h2>
-      <p class="mt-4 leading-relaxed">
-        Märchen prägen seit Jahrhunderten kulturelle Werte und kindliche Entwicklung. Viele klassische Fassungen spiegeln jedoch Rollenbilder und Botschaften wider, die heutigen Vorstellungen von Vielfalt, Gleichberechtigung und Inklusion nicht mehr entsprechen.
-        Gleichzeitig nimmt die Bekanntheit vieler Märchen bei Kindern – insbesondere bei Jungen – deutlich ab.
-        Bisher ist jedoch noch wenig erforscht, wie moderne und gemeinschaftlich adaptierte Märchen auf Kinder wirken – insbesondere auf Sprache, Emotionen, Sozialverhalten und Eltern-Kind-Beziehungen.
-        <strong>MAGIE</strong> setzt hier an, indem es partizipativ entwickelte, zeitgemässe Märchen erprobt und deren Wirkung wissenschaftlich untersucht.
-        Das Projekt verbindet Erkenntnisse aus Entwicklungspsychologie, Erzählforschung, KI-gestütztem Storytelling und Citizen Science.
-      </p>
-    </div>
-  </section>
-
-  <!-- Goals & Impact -->
-  <section id="goals" class="bg-zinc-50 border-y border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Ziele & Wirkung</h2>
-      <ul class="mt-4 grid md:grid-cols-2 gap-4 list-disc pl-5">
-        <li>Akzeptanz: Werden gemeinsam adaptierte Märchen von Eltern und Kindern angenommen?</li>
-        <li>Wirkung: Fördern sie Sprache, Sozial- und Emotionsentwicklung stärker als klassische Märchen?</li>
-        <li>Beziehung: Verbessern sie die Qualität der Eltern-Kind-Interaktion?</li>
-        <li>Figurenbild: Wie verändern sich Verständnis und Wahrnehmung von Märchenfiguren?</li>
-        <li>Chancengerechtigkeit: Profitieren Jungen und Mädchen gleichermassen?</li>
-        <li>Teilhabe: Wie können Märchen gemeinschaftlich modernisiert und adaptiert werden?</li>
-        <li>Open Science: Aufbau eines offenen Repositoriums (Texte, Illustrationen, Audio) als OER.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Phases -->
-  <section id="phases">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Projektphasen</h2>
-      <div class="mt-6 grid md:grid-cols-3 gap-4">
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
-          <h3 class="font-semibold">Vorbereitung (Monate 1–2)</h3>
-          <p class="mt-2 text-sm">Texte sammeln, Citizen Scientists rekrutieren, Partnerschaften aufbauen.</p>
-        </div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
-          <h3 class="font-semibold">Co-Creation (Monate 3–4)</h3>
-          <p class="mt-2 text-sm">Workshops zur gemeinschaftlichen Adaption, Einsatz generativer KI.</p>
-        </div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
-          <h3 class="font-semibold">Materialproduktion (Monat 5)</h3>
-          <p class="mt-2 text-sm">Druck, Illustrationen und Audioversionen.</p>
-        </div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
-          <h3 class="font-semibold">Studienvorbereitung (Monat 6)</h3>
-          <p class="mt-2 text-sm">Studiendesign gemeinsam mit Citizen Scientists finalisieren.</p>
-        </div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
-          <h3 class="font-semibold">Datenerhebung (Monate 7–10)</h3>
-          <p class="mt-2 text-sm">Vorher-/Nachher-Erhebungen, mit Durchführung von Sprachtests, sozial-emotionalen Skalen, Interaktionsanalysen.</p>
-        </div>
-        <div class="p-5 rounded-2xl border border-zinc-200 shadow-sm">
-          <h3 class="font-semibold">Auswertung & Kommunikation (Monate 11–14)</h3>
-          <p class="mt-2 text-sm">Analyse, gemeinsame Reflexion, Publikationen und Veranstaltungen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team -->
-  <section id="team">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Projektleitung & Team</h2>
-      <ul class="mt-4 grid md:grid-cols-2 gap-2 list-disc pl-5">
-        <li>Dr. Robin Segerer</li>
-        <li>Dr. Meret Fehlmann</li>
-        <li>Dr. Leila Schächinger Tenés</li>
-        <li>Lic. phil. Alice Spinnler</li>
-        <li>Norma Jäger, M. A. (Koordination)</li>
-        <li>Myrna Stricker, B. A. (Koordination)</li>
-      </ul>
-
-      <!-- Logos + Links (wieder drin) -->
-      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center">
-        <a href="https://www.ub.uzh.ch" target="_blank" rel="noopener" class="p-3 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50">
-          <div class="text-xs font-semibold text-zinc-500 uppercase tracking-wide">Universitätsbibliothek Zürich</div>
-          <img src="ub-uzh-logo.png" alt="Universitätsbibliothek Zürich Logo" class="mt-2 h-10 w-auto">
-        </a>
-
-        <a href="https://www.ub.unibas.ch" target="_blank" rel="noopener" class="p-3 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50">
-          <div class="text-xs font-semibold text-zinc-500 uppercase tracking-wide">Universitätsbibliothek Basel</div>
-          <img src="ub-unibas-logo.png" alt="Universitätsbibliothek Basel Logo" class="mt-2 h-10 w-auto">
-        </a>
-
-        <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener" class="p-3 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50">
-          <div class="text-xs font-semibold text-zinc-500 uppercase tracking-wide">Seed Grant</div>
-          <img src="grant-logo.png" alt="Citizen Science Zürich Logo" class="mt-2 h-10 w-auto">
-        </a>
-
-        <a href="https://www.maerchengesellschaft.ch/" target="_blank" rel="noopener" class="p-3 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50">
-          <div class="text-xs font-semibold text-zinc-500 uppercase tracking-wide">Unterstützung</div>
-          <img src="maerchengesellschaft-logo.png" alt="Schweizerische Märchengesellschaft Logo" class="mt-2 h-10 w-auto">
-        </a>
-      </div>
-
-      <p class="mt-4 text-sm text-zinc-600">
-        Unterstützt von den
-        <a class="underline" href="https://www.ub.uzh.ch" target="_blank" rel="noopener">Universitätsbibliotheken Zürich</a>
-        und
-        <a class="underline" href="https://www.ub.unibas.ch" target="_blank" rel="noopener">Basel</a>
-        · Seed Grant
-        <a class="underline" href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener">Citizen Science Zürich</a>
-        · Mit Unterstützung der
-        <a class="underline" href="https://www.maerchengesellschaft.ch/" target="_blank" rel="noopener">Schweizerischen Märchengesellschaft</a>
-        ·
-        <a class="underline" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">Instagram @magie_projekt</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="border-t border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Kontakt</h2>
-      <p class="mt-4">Dr. Robin Segerer · Universitätsbibliotheken Zürich & Basel</p>
-      <p>
-        <a class="underline" href="mailto:robin.segerer@ub.uzh.ch">robin.segerer@ub.uzh.ch</a>
-      </p>
-      <p class="mt-2 text-sm text-zinc-700">
-        Updates:
-        <a class="underline" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">Instagram @magie_projekt</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Slide-over / Pop-up für Anmeldung -->
-  <div id="signup-overlay" class="fixed inset-0 bg-black/40 z-40 hidden"></div>
-
-  <aside
-    id="signup-panel"
-    class="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300"
-    aria-hidden="true"
-  >
-    <div class="h-full flex flex-col">
-      <div class="px-5 py-4 border-b border-zinc-200 flex items-center justify-between">
-        <h2 class="text-base font-semibold">
-          Anmeldung als Citizen Scientist
-        </h2>
-        <button
-          type="button"
-          data-close-signup
-          class="rounded-full p-1 border border-zinc-200 text-zinc-500 hover:bg-zinc-50"
-        >
-          ✕
-        </button>
-      </div>
-
-      <!-- KICK-OFF – Pop-up: beide Termine identisch (Ort gleich, Zeiten unterschiedlich) -->
-      <div class="px-5 py-4 text-sm border-b border-zinc-100">
-        <p>
-          Kick-off (identisch): <strong>29.01.2026</strong> <span class="text-zinc-500">(17:30 Uhr)</span>
-          <span class="text-zinc-500">oder</span>
-          <strong>19.02.2026</strong> <span class="text-zinc-500">(18:00 Uhr)</span> ·
-          Ort: <strong>Hauptgebäude der Uni Zürich; Rämistrasse 71</strong> ·
-          Projektstart <strong>01.01.2026</strong>.
-        </p>
-        <p class="mt-1 text-zinc-600">
-          Hinweis: Die beiden Kick-off-Termine sind <strong>inhaltlich identisch</strong> – bitte wählen Sie <strong>einen</strong> Termin.
-        </p>
-        <p class="mt-1 text-zinc-600">
-          Tragen Sie Ihre Kontaktdaten ein – wir melden uns mit Details zu Ablauf und nächsten Schritten.
-        </p>
-      </div>
-      <!-- /KICK-OFF – Pop-up -->
-
-      <div class="flex-1 overflow-y-auto px-5 py-4">
-        <form
-          class="space-y-3"
-          action="mailto:robin.segerer@ub.uzh.ch"
-          method="post"
-          enctype="text/plain"
-        >
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-name">Name</label>
-            <input id="popup-name" name="Name" type="text" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="Ihr Name">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-email">E-Mail</label>
-            <input id="popup-email" name="E-Mail" type="email" required class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="ihre.adresse@example.org">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-role">Rolle / Interesse</label>
-            <input id="popup-role" name="Rolle/Interesse" type="text" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. Familie, Lehrperson, Illustrator:in, …">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="popup-notes">Kurznotiz (optional)</label>
-            <textarea id="popup-notes" name="Bemerkungen" rows="3" class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="z.B. gewünschter Kick-off-Termin (29.01. oder 19.02.), besondere Interessen …"></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90"
-          >
-            Interesse senden (E-Mail-Programm öffnet)
-          </button>
-        </form>
-
-        <p class="mt-3 text-xs text-zinc-500">
-          Hinweis: Das Pop-up nutzt ebenfalls eine <code>mailto:</code>-Anfrage und öffnet Ihr E-Mail-Programm mit den eingegebenen Angaben.
-        </p>
-
-        <div class="mt-3 text-xs text-zinc-600">
-          Mehr Infos:
-          <a class="underline" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">Instagram @magie_projekt</a>
-          ·
-          <a class="underline" href="https://www.maerchengesellschaft.ch/" target="_blank" rel="noopener">Schweizerische Märchengesellschaft</a>
-        </div>
-      </div>
-    </div>
-  </aside>
-
-  <footer class="border-t border-zinc-200">
-    <div class="container px-4 py-6 text-sm text-zinc-500 flex flex-col md:flex-row gap-2 md:gap-0 md:items-center md:justify-between">
-      <span>© <span id="year"></span> MAGIE</span>
-      <span>Letzte Aktualisierung: <span id="updated"></span></span>
-    </div>
-    <div class="container px-4 pb-6 text-xs text-zinc-500">
-      <span>
-        Unterstützt von
-        <a class="underline" href="https://www.ub.uzh.ch" target="_blank" rel="noopener">UB Zürich</a>
-        und
-        <a class="underline" href="https://www.ub.unibas.ch" target="_blank" rel="noopener">UB Basel</a>
-        ·
-        <a class="underline" href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener">Citizen Science Zürich</a>
-        ·
-        <a class="underline" href="https://www.maerchengesellschaft.ch/" target="_blank" rel="noopener">Schweizerische Märchengesellschaft</a>
-        ·
-        <a class="underline" href="https://www.instagram.com/magie_projekt/" target="_blank" rel="noopener">Instagram</a>
-      </span>
-    </div>
-  </footer>
-
-  <!-- AUDIO-ELEMENT EINBAUEN -->
-  <audio id="fairy-sound" src="bird_fairy_melody_low_final.wav"></audio>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('updated').textContent = new Date().toLocaleDateString('de-CH');
-
-    const overlay = document.getElementById('signup-overlay');
-    const panel = document.getElementById('signup-panel');
-
-    function openSignup() {
-      if (!overlay || !panel) return;
-      overlay.classList.remove('hidden');
-      panel.classList.remove('translate-x-full');
-      panel.setAttribute('aria-hidden', 'false');
-    }
-
-    function closeSignup() {
-      if (!overlay || !panel) return;
-      overlay.classList.add('hidden');
-      panel.classList.add('translate-x-full');
-      panel.setAttribute('aria-hidden', 'true');
-    }
-
-    document.querySelectorAll('[data-open-signup]').forEach(btn => {
-      btn.addEventListener('click', openSignup);
-    });
-
-    document.querySelectorAll('[data-close-signup]').forEach(btn => {
-      btn.addEventListener('click', closeSignup);
-    });
-
-    if (overlay) {
-      overlay.addEventListener('click', closeSignup);
-    }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeSignup();
-      }
-    });
-
-    // Sound abspielen, wenn Button mit data-play-sound geklickt wird
-    const fairySound = document.getElementById('fairy-sound');
-
-    // Lautstärke festlegen
-    if (fairySound) fairySound.volume = 0.35;
-
-    document.querySelectorAll('[data-play-sound]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (fairySound) {
-          fairySound.currentTime = 0;
-          fairySound.play().catch(() => {});
-        }
-      });
-    });
-  </script>
 </body>
 </html>
