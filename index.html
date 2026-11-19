@@ -1,336 +1,223 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>MAGIE – Familien für unsere Märchenstudie gesucht</title>
-  <meta name="description" content="Für eine wissenschaftliche MAGIE-Studie suchen wir Familien mit Kindern von 3 bis 7 Jahren. Wir untersuchen, wie Märchen auf emotionale und soziale Entwicklung sowie den Eltern-Kind-Dialog wirken." />
-  <meta property="og:title" content="MAGIE – Familien für unsere Märchenstudie gesucht" />
-  <meta property="og:description" content="Mitmachen bei MAGIE: Wir suchen Familien mit Kindern von 3 bis 7 Jahren für eine achtwöchige wissenschaftliche Studie zu Märchen und kindlicher Entwicklung." />
+  <meta name="theme-color" content="#f7f2e8" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <title>MAGIE – Familien mit Kindern von 4 bis 7 Jahren gesucht</title>
+  <meta name="description" content="Bei MAGIE mitmachen: Wir suchen Familien mit Kindern von 4 bis 7 Jahren für eine achtwöchige Studie rund um Märchen, Geschichten und Gefühle. Zwei spielerische Termine, CHF 20 pro Termin. Interesse unverbindlich anmelden." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_CH" />
+  <meta property="og:title" content="MAGIE – Familien mit Kindern von 4 bis 7 Jahren gesucht" />
+  <meta property="og:description" content="Gemeinsam Märchen und Geschichten erleben und die Forschung unterstützen. Jetzt unverbindlich Interesse an der MAGIE-Familienstudie anmelden." />
   <meta property="og:image" content="https://magie-projekt.github.io/vogel.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; margin:0; color:#18181b; }
-    .container { max-width: 1000px; margin-left:auto; margin-right:auto; }
-    h1 strong { font-weight: 800 !important; }
-    @keyframes sparkle {
-      0%, 100% { opacity: 0.2; transform: scale(0.8); }
-      50% { opacity: 1; transform: scale(1.2); }
-    }
-    .glow { animation: sparkle 3s ease-in-out infinite; font-size: 1.4rem; }
+    :root { --ink:#24251f; --muted:#57574d; --cream:#f7f2e8; --yellow:#f4c84c; --border:#ded8cd; }
+    html { scroll-behavior:smooth; scroll-padding-top:6rem; }
+    body { font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:#fffdf9; }
+    .container { max-width:1120px; margin-inline:auto; }
+    .display { font-family:"DM Serif Display",Georgia,serif; font-weight:400; letter-spacing:-.025em; }
+    .btn-primary { background:var(--ink); color:white; border-radius:999px; font-weight:700; display:inline-flex; justify-content:center; align-items:center; padding:.88rem 1.4rem; min-height:47px; transition:background .2s,transform .2s; }
+    .btn-primary:hover { background:#494c3d; transform:translateY(-1px); }
+    .btn-outline { border:1px solid #afa99f; border-radius:999px; padding:.84rem 1.3rem; min-height:47px; font-weight:700; display:inline-flex; justify-content:center; align-items:center; }
+    .btn-outline:hover { background:#fff; }
+    .eyebrow { letter-spacing:.12em; text-transform:uppercase; font-weight:800; font-size:.74rem; }
+    .feature-card { border:1px solid var(--border); background:#fff; border-radius:1.25rem; padding:1.35rem; }
+    .input-field { width:100%; border:1px solid #b5b0a8; background:white; padding:.78rem 1rem; border-radius:.8rem; font-size:1rem; }
+    .input-field:focus { outline:3px solid rgba(244,200,76,.5); outline-offset:2px; border-color:#5c542b; }
+    a:focus-visible,button:focus-visible,summary:focus-visible { outline:3px solid #aa7900; outline-offset:3px; }
+    details[open] summary .chevron { transform:rotate(180deg); }
+    .chevron { transition:transform .2s; }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
   </style>
 </head>
+<body>
+  <a href="#hauptinhalt" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:p-3 focus:rounded-lg">Zum Inhalt springen</a>
 
-<body class="bg-white text-zinc-800">
-
-  <!-- Header -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-zinc-200">
-    <div class="container px-4 py-3 flex items-center justify-between gap-4">
-      <a href="#" class="font-extrabold text-xl">MAGIE</a>
-
-      <nav class="hidden md:flex flex-wrap gap-4 text-sm">
-        <a href="#study" class="hover:underline">Die Studie</a>
-        <a href="#participate" class="hover:underline">Teilnehmen</a>
-        <a href="#background" class="hover:underline">Das Projekt</a>
+  <header class="sticky top-0 z-40 border-b border-stone-200 bg-[#fffdf9]/95 backdrop-blur">
+    <div class="container px-5 py-3 flex items-center justify-between gap-4">
+      <a href="#start" class="text-xl font-extrabold tracking-tight" aria-label="MAGIE – zum Seitenanfang">MAGIE<span class="text-amber-500">.</span></a>
+      <nav aria-label="Hauptnavigation" class="hidden md:flex items-center gap-6 text-sm font-semibold text-stone-700">
+        <a href="#ablauf" class="hover:underline">So läuft es ab</a>
+        <a href="#fragen" class="hover:underline">Fragen & Antworten</a>
+        <a href="#projekt" class="hover:underline">Das Projekt</a>
         <a href="#team" class="hover:underline">Team</a>
-        <a href="#contact" class="hover:underline">Kontakt</a>
       </nav>
-
-      <a href="#contact"
-         class="inline-flex items-center rounded-2xl px-4 py-2 bg-yellow-400 text-black text-sm font-semibold shadow hover:bg-yellow-500 transition">
-        Interesse anmelden
-      </a>
+      <a href="#kontakt" class="rounded-full bg-[#f4c84c] px-4 py-2.5 text-sm font-extrabold text-stone-950 hover:bg-amber-300 whitespace-nowrap">Interesse anmelden</a>
     </div>
   </header>
 
-  <!-- Claim -->
-  <div class="w-full text-center pt-6 pb-2 relative">
-    <div class="text-2xl md:text-3xl text-zinc-700 relative inline-block"
-         style="font-family: 'Dancing Script', cursive; font-weight: 600;">
-      Märchen gemeinsam weitererzählen – und ihre Wirkung erforschen.
-      <span class="absolute -top-2 -right-6 text-yellow-400 glow">*</span>
-      <span class="absolute -bottom-1 -left-4 text-yellow-300 glow">*</span>
-    </div>
-  </div>
-
-  <!-- Hero -->
-  <section class="bg-gradient-to-b from-zinc-50 to-white">
-    <div class="container px-4 py-10 md:py-16 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <div class="inline-flex rounded-full bg-yellow-100 border border-yellow-200 px-3 py-1 text-sm font-semibold text-zinc-800">
-          Familien gesucht
-        </div>
-
-        <h1 class="mt-4 text-3xl md:text-5xl leading-tight font-semibold">
-          Machen Sie mit bei der <strong>MAGIE-Märchenstudie</strong>
-        </h1>
-
-        <p class="mt-4 text-lg md:text-xl leading-relaxed">
-          Wir suchen Familien, die mit uns untersuchen möchten,
-          wie unterschiedliche Märchenfassungen auf Kinder wirken – und was beim gemeinsamen Vorlesen geschieht.
-        </p>
-
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact"
-             class="inline-flex justify-center rounded-xl px-5 py-3 bg-black text-white text-sm font-semibold shadow hover:opacity-90">
-            Interesse an der Teilnahme anmelden
-          </a>
-
-          <a href="MAGIE_Studienflyer.pdf" target="_blank" rel="noopener"
-             class="inline-flex justify-center rounded-xl px-5 py-3 bg-white border border-zinc-200 text-sm font-semibold shadow-sm hover:bg-zinc-50">
-            Studienflyer (PDF)
-          </a>
-        </div>
-
-        <div class="mt-6 p-5 rounded-2xl border border-zinc-200 bg-white shadow-sm text-sm md:text-base">
-          <div class="font-semibold text-lg">Auf einen Blick</div>
-          <div class="mt-3 grid sm:grid-cols-2 gap-x-6 gap-y-4 text-zinc-700">
-            <div>
-              <strong>Für wen?</strong><br>
-              Familien mit einem Kind von 3–7 Jahren.
-            </div>
-            <div>
-              <strong>Was machen Sie?</strong><br>
-              Märchen zuhause vorlesen und an zwei kurzen, spielerischen Erhebungen teilnehmen.
-            </div>
-            <div>
-              <strong>Wie lange?</strong><br>
-              Die Studie begleitet Ihre Familie über 8 Wochen.
-            </div>
-            <div>
-              <strong>Was untersuchen wir?</strong><br>
-              Wie Märchen Gefühle, Perspektiven, Konfliktlösungen und Gespräche zwischen Eltern und Kindern anregen.
-            </div>
+  <main id="hauptinhalt">
+    <section id="start" class="overflow-hidden" style="background:linear-gradient(145deg,#f7f2e8 0%,#fffaf0 58%,#fffdf9 100%)">
+      <div class="container px-5 pt-12 pb-12 md:pt-20 md:pb-20 grid md:grid-cols-[1.1fr_.9fr] gap-8 md:gap-12 items-center">
+        <div>
+          <p class="eyebrow text-amber-800 mb-5">MAGIE · Märchen- und Geschichtenstudie</p>
+          <h1 class="display text-[2.85rem] leading-[1.09] sm:text-[3.5rem] lg:text-[4.2rem] max-w-2xl">Familien mit Kindern von <span class="relative whitespace-nowrap">4 bis 7 Jahren</span> gesucht.</h1>
+          <p class="mt-6 text-lg md:text-xl leading-relaxed text-stone-700 max-w-xl">Gemeinsam vorlesen, über Gefühle sprechen und die Forschung unterstützen: Wir möchten herausfinden, wie Kinder Märchen und Geschichten erleben.</p>
+          <div class="mt-7 flex flex-wrap items-center gap-3">
+            <a class="btn-primary" href="#kontakt">Jetzt unverbindlich Interesse anmelden</a>
+            <a class="btn-outline" href="#ablauf">Mehr über die Teilnahme</a>
           </div>
-          <div class="mt-4 pt-4 border-t border-zinc-200 text-zinc-700">
-            <strong>Als Dank für Ihre Teilnahme:</strong> CHF 20 pro Untersuchungstermin sowie MAGIE-Märchenbücher für Ihre Familie.
+          <p class="mt-3 text-sm text-stone-600">Eine Interessensbekundung verpflichtet Sie noch nicht zur Teilnahme.</p>
+          <div class="mt-8 pt-5 border-t border-stone-300 grid grid-cols-2 sm:grid-cols-4 gap-x-5 gap-y-5" aria-label="Die Studie auf einen Blick">
+            <div><strong class="block text-2xl font-extrabold">4–7</strong><span class="block text-sm text-stone-700">Jahre alt</span></div>
+            <div><strong class="block text-2xl font-extrabold">8</strong><span class="block text-sm text-stone-700">Wochen Studiendauer</span></div>
+            <div><strong class="block text-2xl font-extrabold">2</strong><span class="block text-sm text-stone-700">spielerische Termine</span></div>
+            <div><strong class="block text-2xl font-extrabold">CHF 20</strong><span class="block text-sm text-stone-700">pro Untersuchungstermin</span></div>
           </div>
         </div>
-
-        <div class="mt-5 flex items-center gap-3">
-          <img src="grant-logo.png" alt="Citizen Science Zürich" class="h-8 w-auto">
-          <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener"
-             class="text-sm font-semibold text-zinc-600 underline decoration-2 decoration-yellow-400 underline-offset-4 hover:text-black">
-            Gefördert durch den Citizen Science Grant Zürich
-          </a>
-        </div>
-      </div>
-
-      <div class="flex justify-center md:justify-end items-center">
-        <img src="vogel.png" alt="MAGIE Logo" class="w-full max-w-[560px] md:max-w-[620px] h-auto">
-      </div>
-    </div>
-  </section>
-
-  <!-- Study -->
-  <section id="study" class="border-t border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Worum geht es in der Studie?</h2>
-      <p class="mt-4 leading-relaxed text-lg">
-        Für MAGIE wurden klassische Märchen gemeinsam mit Citizen Scientists behutsam für die Gegenwart weiterentwickelt.
-        Nun untersuchen wir wissenschaftlich, wie Kinder und Eltern diese Geschichten erleben und wie unterschiedliche Märchenfassungen wirken.
-      </p>
-
-      <div class="mt-8 grid md:grid-cols-2 gap-4">
-        <div class="p-5 rounded-2xl border border-zinc-200 bg-zinc-50">
-          <h3 class="font-semibold text-lg">Was interessiert uns?</h3>
-          <ul class="mt-3 list-disc pl-5 space-y-2 text-sm md:text-base">
-            <li>Wie gut verstehen Kinder Gefühle und Perspektiven von Figuren?</li>
-            <li>Wie lösen Kinder Konflikte in Geschichten?</li>
-            <li>Wie sprechen Eltern und Kinder beim gemeinsamen Lesen über Figuren, Gefühle und Handlungen?</li>
-            <li>Wie werden klassische und modernisierte Märchen von Familien angenommen?</li>
-          </ul>
-        </div>
-
-        <div class="p-5 rounded-2xl border border-zinc-200 bg-zinc-50">
-          <h3 class="font-semibold text-lg">Warum Familien?</h3>
-          <p class="mt-3 text-sm md:text-base leading-relaxed">
-            Märchen wirken nicht nur über den Text. Entscheidend ist auch, was Kinder daraus machen und welche Gespräche beim gemeinsamen Lesen entstehen.
-            Deshalb findet ein wesentlicher Teil der Studie dort statt, wo Geschichten tatsächlich lebendig werden: in den Familien.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Participate -->
-  <section id="participate" class="bg-yellow-50 border-y border-yellow-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Teilnahme an der Familienstudie</h2>
-      <p class="mt-4 leading-relaxed text-lg">
-        Teilnehmen können Familien mit einem Kind im Alter von <strong>3 bis 7 Jahren</strong>.
-        Gemeinsames Vorlesen zuhause wird durch kurze begleitende Erhebungen ergänzt.
-      </p>
-
-      <div class="mt-8 grid md:grid-cols-4 gap-4">
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <div class="text-sm font-semibold text-zinc-500">1</div>
-          <h3 class="mt-1 font-semibold">Start</h3>
-          <p class="mt-2 text-sm">Sie erhalten alle Informationen; Ihre Familie wird einer Studienbedingung zugeteilt.</p>
-        </div>
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <div class="text-sm font-semibold text-zinc-500">2</div>
-          <h3 class="mt-1 font-semibold">Erste Erhebung</h3>
-          <p class="mt-2 text-sm">Wir erfassen spielerisch ausgewählte Fähigkeiten und Eindrücke Ihres Kindes.</p>
-        </div>
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <div class="text-sm font-semibold text-zinc-500">3</div>
-          <h3 class="mt-1 font-semibold">Märchen zuhause</h3>
-          <p class="mt-2 text-sm">Sie lesen die vorgesehenen Geschichten und halten die Leseeinheiten kurz fest.</p>
-        </div>
-        <div class="p-5 bg-white border border-zinc-200 rounded-2xl shadow-sm">
-          <div class="text-sm font-semibold text-zinc-500">4</div>
-          <h3 class="mt-1 font-semibold">Abschluss</h3>
-          <p class="mt-2 text-sm">Am Ende folgt eine zweite Erhebung.</p>
-        </div>
-      </div>
-
-      <p class="mt-6 text-sm md:text-base text-zinc-700">
-        Die Zuteilung zu einer von drei Studienbedingungen erfolgt nach dem Zufallsprinzip; eine spätere Startgruppe ist Teil des Studiendesigns.
-      </p>
-
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="#contact"
-           class="inline-flex justify-center rounded-xl px-5 py-3 bg-black text-white text-sm font-semibold shadow hover:opacity-90">
-          Interesse anmelden
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Background -->
-  <section id="background" class="bg-zinc-50 border-y border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Wie die MAGIE-Märchen entstanden sind</h2>
-      <p class="mt-4 leading-relaxed">
-        MAGIE verbindet Citizen Science mit entwicklungspsychologischer Forschung. Gemeinsam mit Citizen Scientists wurden klassische Märchen diskutiert und behutsam für die Gegenwart weiterentwickelt. In der Familienstudie untersuchen wir, wie Kinder und Eltern diese Geschichten erleben.
-      </p>
-    </div>
-  </section>
-
-  <!-- Team -->
-  <section id="team" class="bg-zinc-50 border-y border-zinc-200">
-    <div class="container px-4 py-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Projektleitung & Team</h2>
-      <ul class="mt-4 grid md:grid-cols-2 gap-2 list-disc pl-5">
-        <li>Dr. Robin Segerer</li>
-        <li>Dr. Meret Fehlmann</li>
-        <li>Dr. Leila Schächinger Tenés</li>
-        <li>Lic. phil. Alice Spinnler</li>
-        <li>Charlotte Gehlen, B. Sc. (Koordination)</li>
-      </ul>
-      <p class="mt-6 text-sm text-zinc-600">
-        Unterstützt von den Universitätsbibliotheken Zürich und Basel · Seed Grant Citizen Science Zürich
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact / Signup -->
-  <section id="contact" class="border-t border-zinc-200">
-    <div class="container px-4 py-12">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold">Interesse an der Teilnahme?</h2>
-        <p class="mt-3 text-zinc-700">
-          Melden Sie sich unverbindlich an. Wir senden Ihnen anschliessend die detaillierten Studieninformationen.
-        </p>
-
-        <form class="mt-5 space-y-3 bg-white border border-zinc-200 rounded-2xl p-5 shadow-sm"
-              action="mailto:magie@ub.uzh.ch" method="post" enctype="text/plain">
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="name">Name</label>
-            <input id="name" name="Name" type="text" required
-                   class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="Ihr Name">
+        <div class="flex flex-col items-center justify-center">
+          <div class="relative w-full max-w-[510px]">
+            <div aria-hidden="true" class="absolute top-[10%] left-[10%] w-[80%] h-[80%] rounded-full bg-[#f6e6ba]/65 blur-3xl"></div>
+            <img src="vogel.png" alt="Vogelillustration des MAGIE-Projekts" class="relative w-full h-auto object-contain" loading="eager" fetchpriority="high" />
           </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="email">E-Mail</label>
-            <input id="email" name="E-Mail" type="email" required
-                   class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm" placeholder="ihre.adresse@example.org">
+          <div class="flex flex-wrap items-center justify-center gap-3 mt-1 text-sm text-stone-700">
+            <img src="grant-logo.png" alt="Logo Citizen Science Zürich" class="h-9 w-auto" loading="lazy" />
+            <span>Gefördert durch den <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener noreferrer" class="font-semibold underline underline-offset-2">Citizen Science Grant Zürich</a></span>
           </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="age">Alter des Kindes</label>
-            <select id="age" name="Alter des Kindes" required
-                    class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm bg-white">
-              <option value="">Bitte auswählen</option>
-              <option>3 Jahre</option>
-              <option>4 Jahre</option>
-              <option>5 Jahre</option>
-              <option>6 Jahre</option>
-              <option>7 Jahre</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-zinc-600 mb-1" for="notes">Bemerkung (optional)</label>
-            <textarea id="notes" name="Bemerkungen" rows="3"
-                      class="w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm"
-                      placeholder="Fragen oder Hinweise zur Teilnahme …"></textarea>
-          </div>
-          <button type="submit"
-                  class="w-full inline-flex justify-center rounded-xl px-4 py-2 bg-black text-white text-sm font-semibold shadow hover:opacity-90">
-            Interesse senden
-          </button>
-        </form>
-
-        <p class="mt-3 text-xs text-zinc-500">
-          Das Formular öffnet Ihr E-Mail-Programm. Alternativ erreichen Sie uns direkt unter
-          <a class="underline" href="mailto:magie@ub.uzh.ch">magie@ub.uzh.ch</a>.
-        </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Partners -->
-  <section id="partners" class="border-t border-zinc-200 bg-white">
-    <div class="container px-4 py-14">
-      <h2 class="text-2xl md:text-3xl font-extrabold">Unterstützung & Partner</h2>
-
-      <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4 items-center">
-        <a href="https://www.ub.uzh.ch" target="_blank" rel="noopener"
-           class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
-          <img src="assets/logos/uzh.svg" alt="Universitätsbibliothek Zürich" class="h-10 w-auto object-contain">
-        </a>
-        <a href="https://www.ub.unibas.ch" target="_blank" rel="noopener"
-           class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
-          <img src="assets/logos/unibas.svg" alt="Universitätsbibliothek Basel" class="h-10 w-auto object-contain">
-        </a>
-        <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener"
-           class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
-          <img src="assets/logos/citizen.png" alt="Citizen Science Zürich" class="h-10 w-auto object-contain">
-        </a>
-        <a href="https://www.maerchengesellschaft.ch" target="_blank" rel="noopener"
-           class="p-4 rounded-2xl border border-zinc-200 bg-white shadow-sm hover:bg-zinc-50 flex justify-center">
-          <img src="assets/logos/maerchen.svg" alt="Schweizerische Märchengesellschaft" class="h-10 w-auto object-contain">
-        </a>
+    <section class="border-y border-stone-200 bg-white">
+      <div class="container px-5 py-9 md:py-11">
+        <h2 class="display text-3xl md:text-4xl">Was bedeutet die Teilnahme für Ihre Familie?</h2>
+        <div class="grid md:grid-cols-3 gap-4 mt-6">
+          <article class="feature-card"><p class="eyebrow text-amber-800 mb-2">Gemeinsam lesen</p><h3 class="text-lg font-bold mb-2">Märchen & Geschichten</h3><p class="text-stone-700 leading-relaxed">Je nach Studiengruppe lesen Sie ausgewählte Texte mit Ihrem Kind oder beginnen mit den bereitgestellten Materialien zu einem späteren Zeitpunkt.</p></article>
+          <article class="feature-card"><p class="eyebrow text-amber-800 mb-2">Spielerisch teilnehmen</p><h3 class="text-lg font-bold mb-2">Zwei Untersuchungstermine</h3><p class="text-stone-700 leading-relaxed">Zu Beginn und am Ende untersuchen wir auf spielerische Weise ausgewählte Fähigkeiten Ihres Kindes.</p></article>
+          <article class="feature-card"><p class="eyebrow text-amber-800 mb-2">Als Dankeschön</p><h3 class="text-lg font-bold mb-2">CHF 20 pro Termin</h3><p class="text-stone-700 leading-relaxed">Für jeden Untersuchungstermin erhalten Sie CHF 20. Ausserdem sind MAGIE-Märchenbücher für teilnehmende Familien vorgesehen.</p></article>
+        </div>
       </div>
+    </section>
 
-      <p class="mt-6 text-sm text-zinc-600">
-        Unterstützt durch die Universitätsbibliotheken Zürich und Basel · Seed Grant Citizen Science Zürich ·
-        mit Unterstützung der Schweizerischen Märchengesellschaft.
-      </p>
-    </div>
-  </section>
+    <section id="ablauf" class="bg-[#fff9ed]">
+      <div class="container px-5 py-14 md:py-20">
+        <p class="eyebrow text-amber-800 mb-3">Der Ablauf</p>
+        <h2 class="display text-3xl md:text-5xl max-w-3xl">So einfach können Sie mitmachen</h2>
+        <p class="mt-4 text-stone-700 text-lg max-w-3xl">Die Studie begleitet Familien über acht Wochen. Sie besteht aus zwei spielerischen Erhebungen und einer begleiteten Phase zuhause.</p>
+        <ol class="mt-9 grid md:grid-cols-4 gap-4">
+          <li class="feature-card"><span class="flex items-center justify-center w-9 h-9 rounded-full bg-amber-200 font-bold">1</span><h3 class="mt-4 text-lg font-bold">Interesse anmelden</h3><p class="mt-2 text-stone-700">Melden Sie sich unverbindlich. Wir informieren Sie über die Teilnahme und das weitere Vorgehen.</p></li>
+          <li class="feature-card"><span class="flex items-center justify-center w-9 h-9 rounded-full bg-amber-200 font-bold">2</span><h3 class="mt-4 text-lg font-bold">Erster Termin</h3><p class="mt-2 text-stone-700">Ihr Kind nimmt an einer spielerischen Erhebung teil. Die Zuteilung zur Studiengruppe erfolgt zufällig.</p></li>
+          <li class="feature-card"><span class="flex items-center justify-center w-9 h-9 rounded-full bg-amber-200 font-bold">3</span><h3 class="mt-4 text-lg font-bold">Alltag zuhause</h3><p class="mt-2 text-stone-700">Je nach Gruppe erhalten Sie unterschiedliche Leseaufgaben oder beginnen erst später. Ihre Leseeinheiten halten Sie kurz fest.</p></li>
+          <li class="feature-card"><span class="flex items-center justify-center w-9 h-9 rounded-full bg-amber-200 font-bold">4</span><h3 class="mt-4 text-lg font-bold">Zweiter Termin</h3><p class="mt-2 text-stone-700">Zum Abschluss folgt eine zweite spielerische Erhebung mit Ihrem Kind.</p></li>
+        </ol>
+        <div class="mt-7 rounded-2xl bg-white border border-amber-200 p-5 md:p-6 flex flex-col md:flex-row gap-5 md:items-center md:justify-between">
+          <div class="max-w-3xl"><h3 class="font-bold text-lg">Warum gibt es unterschiedliche Gruppen?</h3><p class="text-stone-700 mt-2">Wir vergleichen drei zufällig zugeteilte Studiengruppen. Dazu gehört auch eine <strong>Wartegruppe</strong>: Diese Familien beginnen mit den vorgesehenen MAGIE-Materialien erst nach einer Wartephase. Ihr Beitrag ist für die Forschung genauso wichtig.</p></div>
+          <a href="#kontakt" class="btn-primary shrink-0">Interesse anmelden</a>
+        </div>
+      </div>
+    </section>
 
-  <footer class="border-t border-zinc-200">
-    <div class="container px-4 py-6 text-sm text-zinc-500 flex flex-col md:flex-row gap-2 md:gap-0 md:items-center md:justify-between">
-      <span>© <span id="year"></span> MAGIE</span>
-      <span>
-        <a class="underline" href="MAGIE_Studienflyer.pdf" target="_blank" rel="noopener">Studienflyer (PDF)</a>
-        · Letzte Aktualisierung: <span id="updated"></span>
-      </span>
+    <section id="fragen" class="bg-white">
+      <div class="container px-5 py-14 md:py-20 grid lg:grid-cols-[.7fr_1.3fr] gap-8 lg:gap-14">
+        <div><p class="eyebrow text-amber-800 mb-3">Gut zu wissen</p><h2 class="display text-3xl md:text-4xl">Fragen zur Teilnahme</h2><p class="mt-4 text-stone-700">Sie sind noch unsicher? Hier finden Sie Antworten auf die wichtigsten Fragen.</p></div>
+        <div class="space-y-3">
+          <details class="rounded-xl border border-stone-200 p-5" open><summary class="font-bold cursor-pointer flex justify-between gap-4">Wer kann teilnehmen?<span class="chevron" aria-hidden="true">⌄</span></summary><p class="mt-3 leading-relaxed text-stone-700">Wir suchen Familien mit einem Kind im Alter von <strong>4 bis 7 Jahren</strong>. Weitere Einzelheiten zu den Teilnahmebedingungen erhalten Sie auf Anfrage.</p></details>
+          <details class="rounded-xl border border-stone-200 p-5"><summary class="font-bold cursor-pointer flex justify-between gap-4">Müssen wir von Anfang an Märchen lesen?<span class="chevron" aria-hidden="true">⌄</span></summary><p class="mt-3 leading-relaxed text-stone-700">Nein. Welche Texte Sie im Rahmen der Studie erhalten und wann Sie damit beginnen, hängt von Ihrer zufällig zugeteilten Studiengruppe ab. In einer Wartegruppe beginnen Familien mit den MAGIE-Materialien erst später.</p></details>
+          <details class="rounded-xl border border-stone-200 p-5"><summary class="font-bold cursor-pointer flex justify-between gap-4">Wie aufwendig ist die Teilnahme?<span class="chevron" aria-hidden="true">⌄</span></summary><p class="mt-3 leading-relaxed text-stone-700">Die Studie dauert acht Wochen und umfasst zwei spielerische Untersuchungstermine. Zuhause halten Sie Leseeinheiten kurz fest. Welche zusätzlichen Leseaufgaben anfallen, hängt von der Studiengruppe ab.</p></details>
+          <details class="rounded-xl border border-stone-200 p-5"><summary class="font-bold cursor-pointer flex justify-between gap-4">Ist die Interessensbekundung verbindlich?<span class="chevron" aria-hidden="true">⌄</span></summary><p class="mt-3 leading-relaxed text-stone-700">Nein. Zunächst erhalten Sie die detaillierten Studieninformationen. Danach können Sie entscheiden, ob Sie an der Studie teilnehmen möchten.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekt" class="bg-[#f7f2e8]">
+      <div class="container px-5 py-14 md:py-20">
+        <p class="eyebrow text-amber-800 mb-3">Wissenschaftlicher Hintergrund</p>
+        <h2 class="display text-3xl md:text-4xl">Warum erforschen wir Märchen und Geschichten?</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-relaxed text-stone-700">Geschichten laden dazu ein, in andere Perspektiven einzutauchen und über Gefühle zu sprechen. Im Projekt MAGIE untersuchen wir, wie Kinder Gefühle und Perspektiven von Figuren verstehen und welche Rolle das gemeinsame Lesen und die Gespräche darüber spielen.</p>
+        <p class="mt-4 max-w-4xl leading-relaxed text-stone-700">Für das Projekt wurden klassische Märchen gemeinsam mit Citizen Scientists behutsam für die Gegenwart weiterentwickelt. Nun möchten wir erforschen, wie Familien diese und andere Geschichten erleben. Ob und wie sich das emotionale Verständnis von Kindern verändert, ist eine offene Forschungsfrage.</p>
+      </div>
+    </section>
+
+    <section id="team" class="bg-white">
+      <div class="container px-5 py-14 md:py-20">
+        <p class="eyebrow text-amber-800 mb-3">Wer steckt dahinter?</p>
+        <h2 class="display text-3xl md:text-4xl">Das MAGIE-Projektteam</h2>
+        <div class="grid md:grid-cols-2 gap-5 mt-7">
+          <div class="feature-card"><h3 class="font-bold text-lg mb-3">Projektteam & Koordination</h3><ul class="space-y-2 text-stone-700"><li>Dr. Robin Segerer</li><li>Dr. Meret Fehlmann</li><li>Dr. Leila Schächinger Tenés</li><li>Lic. phil. Alice Spinnler</li><li>Charlotte Gehlen, B. Sc. (Koordination)</li></ul></div>
+          <div class="feature-card"><h3 class="font-bold text-lg mb-3">Weitere Mitarbeitende</h3><ul class="space-y-2 text-stone-700"><li>Laura Kórász</li><li>Julia Szabo</li><li>Jana Puhringer</li><li>Matthias Fankhauser, B. Sc.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="bg-[#f8e5ad]">
+      <div class="container px-5 py-14 md:py-20 grid lg:grid-cols-[.85fr_1.15fr] gap-8 lg:gap-14 items-start">
+        <div>
+          <p class="eyebrow text-amber-900 mb-3">Wir freuen uns über Ihr Interesse</p>
+          <h2 class="display text-4xl md:text-5xl">Möchten Sie mit Ihrem Kind teilnehmen?</h2>
+          <p class="text-lg leading-relaxed text-stone-800 mt-5">Schreiben Sie uns ganz unverbindlich. Wir senden Ihnen die ausführlichen Informationen zur MAGIE-Studie.</p>
+          <p class="mt-5 font-bold">Kontakt: <a class="underline underline-offset-4" href="mailto:magie@ub.uzh.ch?subject=MAGIE%20-%20Interesse%20an%20der%20Familienstudie">magie@ub.uzh.ch</a></p>
+          <p class="mt-3 text-sm text-stone-700">Bitte senden Sie über das Formular keine sensiblen Gesundheitsdaten Ihres Kindes.</p>
+        </div>
+        <div class="rounded-[1.5rem] bg-white border border-stone-200 shadow-sm p-6 md:p-8">
+          <h3 class="text-xl font-extrabold">Unverbindlich Interesse anmelden</h3>
+          <p class="text-sm text-stone-600 mt-2 mb-5">Wir benötigen zunächst nur wenige Angaben.</p>
+          <form id="interest-form" class="space-y-4" action="mailto:magie@ub.uzh.ch" method="post" enctype="text/plain">
+            <div><label for="name" class="block text-sm font-bold mb-1.5">Ihr Name <span aria-hidden="true">*</span></label><input id="name" name="Name" class="input-field" type="text" autocomplete="name" placeholder="Vor- und Nachname" required /></div>
+            <div><label for="email" class="block text-sm font-bold mb-1.5">Ihre E-Mail-Adresse <span aria-hidden="true">*</span></label><input id="email" name="E-Mail" class="input-field" type="email" autocomplete="email" placeholder="beispiel@adresse.ch" required /></div>
+            <div><label for="age" class="block text-sm font-bold mb-1.5">Alter Ihres Kindes <span aria-hidden="true">*</span></label><select id="age" name="Alter des Kindes" class="input-field" required><option value="">Bitte auswählen</option><option value="4 Jahre">4 Jahre</option><option value="5 Jahre">5 Jahre</option><option value="6 Jahre">6 Jahre</option><option value="7 Jahre">7 Jahre</option></select></div>
+            <div><label for="notes" class="block text-sm font-bold mb-1.5">Ihre Frage oder Anmerkung <span class="font-normal">(freiwillig)</span></label><textarea id="notes" name="Bemerkungen" class="input-field" rows="3" placeholder="Wenn Sie uns noch etwas mitteilen möchten …"></textarea></div>
+            <button class="btn-primary w-full" type="submit">E-Mail zur Anmeldung vorbereiten</button>
+          </form>
+          <p id="email-notice" aria-live="polite" class="mt-4 text-sm text-stone-700">Das Formular öffnet eine vorbereitete Nachricht in Ihrem E-Mail-Programm. <strong>Sie müssen die E-Mail noch selbst absenden.</strong> Alternativ können Sie direkt an <a href="mailto:magie@ub.uzh.ch" class="underline font-semibold">magie@ub.uzh.ch</a> schreiben.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="partner" class="bg-white border-t border-stone-200">
+      <div class="container px-5 py-12 md:py-14">
+        <h2 class="text-xl font-extrabold">Unterstützung & Partner</h2>
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
+          <a href="https://www.ub.uzh.ch" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek Zürich (öffnet in neuem Tab)" class="feature-card flex min-h-[95px] justify-center items-center"><img src="assets/logos/uzh.svg" alt="Universitätsbibliothek Zürich" class="h-10 max-w-full object-contain" loading="lazy" /></a>
+          <a href="https://www.ub.unibas.ch" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek Basel (öffnet in neuem Tab)" class="feature-card flex min-h-[95px] justify-center items-center"><img src="assets/logos/unibas.svg" alt="Universitätsbibliothek Basel" class="h-10 max-w-full object-contain" loading="lazy" /></a>
+          <a href="https://www.citizenscience.uzh.ch" target="_blank" rel="noopener noreferrer" aria-label="Citizen Science Zürich (öffnet in neuem Tab)" class="feature-card flex min-h-[95px] justify-center items-center"><img src="assets/logos/citizen.png" alt="Citizen Science Zürich" class="h-10 max-w-full object-contain" loading="lazy" /></a>
+          <a href="https://www.maerchengesellschaft.ch" target="_blank" rel="noopener noreferrer" aria-label="Schweizerische Märchengesellschaft (öffnet in neuem Tab)" class="feature-card flex min-h-[95px] justify-center items-center"><img src="assets/logos/maerchen.svg" alt="Schweizerische Märchengesellschaft" class="h-10 max-w-full object-contain" loading="lazy" /></a>
+        </div>
+        <p class="mt-5 text-sm text-stone-600">Unterstützt durch die Universitätsbibliotheken Zürich und Basel, den Citizen Science Grant Zürich sowie die Schweizerische Märchengesellschaft.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#25271f] text-stone-200">
+    <div class="container px-5 py-6 text-sm flex flex-wrap justify-between gap-3">
+      <span>© MAGIE · Stand: November 2026</span>
+      <span><a class="underline underline-offset-2" href="mailto:magie@ub.uzh.ch">Kontakt</a></span>
     </div>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('updated').textContent = new Date().toLocaleDateString('de-CH');
+    (function () {
+      const form = document.getElementById('interest-form');
+      const notice = document.getElementById('email-notice');
+      form.addEventListener('submit', function (event) {
+        if (!form.reportValidity()) return;
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const age = document.getElementById('age').value;
+        const notes = document.getElementById('notes').value.trim();
+        const subject = 'MAGIE – unverbindliches Interesse an der Familienstudie';
+        const body = [
+          'Guten Tag', '',
+          'Ich interessiere mich unverbindlich für die Teilnahme an der MAGIE-Familienstudie.',
+          'Bitte senden Sie mir weitere Informationen.', '',
+          'Name: ' + name,
+          'E-Mail: ' + email,
+          'Alter meines Kindes: ' + age,
+          notes ? 'Bemerkung: ' + notes : '', '',
+          'Freundliche Grüsse', name
+        ].filter((line, index, arr) => line !== '' || arr[index - 1] !== '').join('\n');
+        notice.innerHTML = 'Ihre E-Mail ist vorbereitet. Bitte <strong>senden Sie die Nachricht in Ihrem E-Mail-Programm ab</strong>. Falls sich kein Programm öffnet, schreiben Sie direkt an <a class="underline font-semibold" href="mailto:magie@ub.uzh.ch">magie@ub.uzh.ch</a>.';
+        window.location.href = 'mailto:magie@ub.uzh.ch?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      });
+    }());
   </script>
 </body>
 </html>
